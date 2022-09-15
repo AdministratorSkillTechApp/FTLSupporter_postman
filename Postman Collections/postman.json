@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "FTLSupport",
-			"_postman_id": "51f7def8-45df-4363-9f23-9f26825b5975",
+			"id": "51f7def8-45df-4363-9f23-9f26825b5975",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -26,6 +26,43 @@
 				"url": "FTLSupport"
 			},
 			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": {
+			"value": "1234567889",
+			"key": "X-API-KEY"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "edaa56ef-fa78-42ae-9150-22c6dfd93050",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d98134ba-2f48-4c7b-affb-fa03f1a79c6d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "4297d20d-9e59-49ea-bb1e-5dbd95bf6c68",
+			"key": "X-FIRM",
+			"value": "FLT",
+			"type": "string"
 		}
 	]
 }
