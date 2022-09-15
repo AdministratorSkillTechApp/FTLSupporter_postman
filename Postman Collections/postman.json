@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "f9c85fff-d9f5-4632-88ea-5f95b193d4fc",
+		"name": "FTLSupporter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FTLSupport",
+			"_postman_id": "51f7def8-45df-4363-9f23-9f26825b5975",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Routes\": [\r\n        {\r\n            \"RouteSectionType\": 1,\r\n            \"DEP_NAME\": \"32937829\",\r\n            \"Lat\": 47.463531719505141,\r\n            \"Lng\": 19.05104398727417,\r\n            \"ZIP_NUM\": 0,\r\n            \"ZIP_CITY\": null,\r\n            \"DEP_ADRSTREET\": null,\r\n            \"DEP_ADRNUM\": null\r\n        },\r\n        {\r\n            \"RouteSectionType\": 2,\r\n            \"DEP_NAME\": \"32933141\",\r\n            \"Lat\": 47.617026824007588,\r\n            \"Lng\": 19.121489524841309,\r\n            \"ZIP_NUM\": 0,\r\n            \"ZIP_CITY\": null,\r\n            \"DEP_ADRSTREET\": null,\r\n            \"DEP_ADRNUM\": null\r\n        },\r\n        {\r\n            \"RouteSectionType\": 0,\r\n            \"DEP_NAME\": \"32933141\",\r\n            \"Lat\": 47.374675987319513,\r\n            \"Lng\": 19.121339321136475,\r\n            \"ZIP_NUM\": 0,\r\n            \"ZIP_CITY\": null,\r\n            \"DEP_ADRSTREET\": null,\r\n            \"DEP_ADRNUM\": null\r\n        }\r\n    ],\r\nTruck: {\r\n        \"TRK_CODE\": \"PML-681\",\r\n        \"TRK_REG_NUM\": null,\r\n        \"TRK_TRAILER\": null,\r\n        \"TRK_WEIGHT\": 51000,\r\n        \"TRK_XHEIGHT\": 0,\r\n        \"TRK_XWIDTH\": 0,\r\n        \"TRK_HEIGHT\": 0,\r\n        \"TRK_WIDTH\": 0,\r\n        \"TRK_LENGTH\": 0,\r\n        \"TRK_COLOR\": {\r\n            \"R\": 0,\r\n            \"G\": 0,\r\n            \"B\": 0,\r\n            \"A\": 0,\r\n            \"IsKnownColor\": false,\r\n            \"IsEmpty\": true,\r\n            \"IsNamedColor\": false,\r\n            \"IsSystemColor\": false,\r\n            \"Name\": \"0\"\r\n        },\r\n        \"TRK_GPS\": false,\r\n        \"TRK_BACKPANEL\": false,\r\n        \"TRK_LOGO\": false,\r\n        \"TRK_AXLENUM\": 0,\r\n        \"TRK_ETOLLCAT\": 4,\r\n        \"TRK_ENGINEEURO\": 6,\r\n        \"TRK_IDLETIME\": 0,\r\n        \"TRK_ACTIVE\": false,\r\n        \"TRK_COMMENT\": null,\r\n        \"CRR_CODE\": null,\r\n        \"WHS_CODE\": null,\r\n        \"SPV_VALUE1\": 80,\r\n        \"SPV_VALUE2\": 80,\r\n        \"SPV_VALUE3\": 70,\r\n        \"SPV_VALUE4\": 70,\r\n        \"SPV_VALUE5\": 30,\r\n        \"SPV_VALUE6\": 20,\r\n        \"SPV_VALUE7\": 15,\r\n        \"CPP_LOADQTY\": 0,\r\n        \"CPP_LOADVOL\": 0,\r\n        \"TFP_FIXCOST\": 0,\r\n        \"TFP_KMCOST\": 0,\r\n        \"TFP_HOURCOST\": 0\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "FTLSupport"
+			},
+			"response": []
+		}
+	]
+}
