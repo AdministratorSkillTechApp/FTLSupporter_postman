@@ -38,7 +38,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\r\n    \"Truck\": {\r\n        \"TRK_CODE\": \"MTT-272\",\r\n        \"TRK_REG_NUM\": null,\r\n        \"TRK_TRAILER\": null,\r\n        \"TRK_WEIGHT\": 8341,\r\n        \"TRK_XHEIGHT\": 0,\r\n        \"TRK_XWIDTH\": 0,\r\n        \"TRK_HEIGHT\": 0,\r\n        \"TRK_WIDTH\": 0,\r\n        \"TRK_LENGTH\": 0,\r\n        \"TRK_COLOR\": {\r\n            \"R\": 0,\r\n            \"G\": 0,\r\n            \"B\": 0,\r\n            \"A\": 0,\r\n            \"IsKnownColor\": false,\r\n            \"IsEmpty\": true,\r\n            \"IsNamedColor\": false,\r\n            \"IsSystemColor\": false,\r\n            \"Name\": \"0\"\r\n        },\r\n        \"TRK_GPS\": false,\r\n        \"TRK_BACKPANEL\": false,\r\n        \"TRK_LOGO\": false,\r\n        \"TRK_AXLENUM\": 0,\r\n        \"TRK_ETOLLCAT\": 4,\r\n        \"TRK_ENGINEEURO\": 6,\r\n        \"TRK_IDLETIME\": 0,\r\n        \"TRK_ACTIVE\": false,\r\n        \"TRK_COMMENT\": null,\r\n        \"CRR_CODE\": null,\r\n        \"WHS_CODE\": null,\r\n        \"SPV_VALUE1\": 70,\r\n        \"SPV_VALUE2\": 60,\r\n        \"SPV_VALUE3\": 50,\r\n        \"SPV_VALUE4\": 40,\r\n        \"SPV_VALUE5\": 35,\r\n        \"SPV_VALUE6\": 15,\r\n        \"SPV_VALUE7\": 15,\r\n        \"CPP_LOADQTY\": 0,\r\n        \"CPP_LOADVOL\": 0,\r\n        \"TFP_FIXCOST\": 0,\r\n        \"TFP_KMCOST\": 0,\r\n        \"TFP_HOURCOST\": 0\r\n    },\r\n    \"Route\": [\r\n        {\r\n            \"RouteSectionType\": 1,\r\n            \"DEP_NAME\": \"30451951\",\r\n            \"Lat\": 47.424683046931982,\r\n            \"Lng\": 19.173181056976318,\r\n            \"ZIP_NUM\": 0,\r\n            \"ZIP_CITY\": null,\r\n            \"DEP_ADRSTREET\": null,\r\n            \"DEP_ADRNUM\": null\r\n        },\r\n        {\r\n            \"RouteSectionType\": 2,\r\n            \"DEP_NAME\": \"30451251\",\r\n            \"Lat\": 47.3795509669352,\r\n            \"Lng\": 19.128463268280029,\r\n            \"ZIP_NUM\": 0,\r\n            \"ZIP_CITY\": null,\r\n            \"DEP_ADRSTREET\": null,\r\n            \"DEP_ADRNUM\": null\r\n        },\r\n        {\r\n            \"RouteSectionType\": 0,\r\n            \"DEP_NAME\": \"30451251\",\r\n            \"Lat\": 47.579623368477591,\r\n            \"Lng\": 19.735897779464722,\r\n            \"ZIP_NUM\": 0,\r\n            \"ZIP_CITY\": null,\r\n            \"DEP_ADRSTREET\": null,\r\n            \"DEP_ADRNUM\": null\r\n        }\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -81,7 +81,7 @@
 	],
 	"variable": [
 		{
-			"id": "2aacef18-3d4e-49c6-89da-fc086eb32faa",
+			"id": "6375ab44-196d-42a6-b546-a99de616f3da",
 			"key": "X-FIRM",
 			"value": "FLT",
 			"type": "string"
