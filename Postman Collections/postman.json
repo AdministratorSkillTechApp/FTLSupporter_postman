@@ -26,6 +26,28 @@
 				"url": "FTLSupport"
 			},
 			"response": []
+		},
+		{
+			"name": "FTLSupporter",
+			"id": "a5400293-1df3-4538-86cd-0cbb390f8b4e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "FTLSupporter"
+			},
+			"response": []
 		}
 	],
 	"auth": {
@@ -59,7 +81,7 @@
 	],
 	"variable": [
 		{
-			"id": "4297d20d-9e59-49ea-bb1e-5dbd95bf6c68",
+			"id": "2aacef18-3d4e-49c6-89da-fc086eb32faa",
 			"key": "X-FIRM",
 			"value": "FLT",
 			"type": "string"
