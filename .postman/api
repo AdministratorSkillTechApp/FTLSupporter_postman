@@ -1,0 +1,17 @@
+id = 14ac2592-185f-42d0-845b-aa257740b2d5
+
+[relations]
+
+[relations.collections]
+rootDirectory = postman/collections
+files[] = {"id":"16717808-4dd16ecf-c7e1-4643-87a4-eb74007e6619","path":"FTLSupport Rest API.json","metaData":{}}
+
+[relations.collections.metaData]
+
+[relations.apiDefinition]
+rootDirectory = Postman Collections
+files[] = {"path":"postman.json","metaData":{}}
+
+[relations.apiDefinition.metaData]
+type = openapi:3_1
+rootFiles[] = postman.json

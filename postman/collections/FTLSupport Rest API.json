@@ -1,0 +1,540 @@
+{
+	"info": {
+		"_postman_id": "4dd16ecf-c7e1-4643-87a4-eb74007e6619",
+		"name": "FTLSupport Rest API",
+		"description": "FTLSupport REST API Service\n\nContact Support:\n Name: Skill.Tech\n Email: szdezso@gmail.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "16717808-4dd16ecf-c7e1-4643-87a4-eb74007e6619"
+	},
+	"item": [
+		{
+			"name": "api/v1/FTL Supporter",
+			"item": [
+				{
+					"name": "Calculate by FTLSupporter engine",
+					"id": "d9af20ba-3e7c-4cad-9e5a-718ce34da046",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taskList\": [\r\n    {\r\n      \"taskID\": \"string\",\r\n      \"cargoType\": \"string\",\r\n      \"truckTypes\": \"string\",\r\n      \"weight\": 0,\r\n      \"client\": \"string\",\r\n      \"tPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:01:04.517Z\",\r\n          \"close\": \"2022-10-14T06:01:04.517Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:01:04.517Z\"\r\n        }\r\n      ],\r\n      \"inclTruckProps\": \"string\",\r\n      \"exclTruckProps\": \"string\"\r\n    }\r\n  ],\r\n  \"truckList\": [\r\n    {\r\n      \"truckID\": \"string\",\r\n      \"gvwr\": 0,\r\n      \"capacity\": 0,\r\n      \"truckType\": \"string\",\r\n      \"cargoTypes\": \"string\",\r\n      \"fixCost\": 0,\r\n      \"kmCost\": 0,\r\n      \"relocateCost\": 0,\r\n      \"maxKM\": 0,\r\n      \"maxDuration\": 0,\r\n      \"engineEuro\": 0,\r\n      \"eTollCat\": 0,\r\n      \"rZones\": \"string\",\r\n      \"width\": 0,\r\n      \"height\": 0,\r\n      \"truckProps\": \"string\",\r\n      \"remainingDriveTime\": 0,\r\n      \"remainingRestTime\": 0,\r\n      \"remainingTimeToStartDailyRest\": 0,\r\n      \"remainingDailyDriveTime\": 0,\r\n      \"remainingDailyRestTime\": 0,\r\n      \"remainingWeeklyDriveTime\": 0,\r\n      \"remainingWeeklyRestTime\": 0,\r\n      \"remainingTwoWeeklyDriveTime\": 0,\r\n      \"remainingTwoWeeklyRestTime\": 0,\r\n      \"remainingRestTimeToCompensate\": 0,\r\n      \"truckTaskType\": 0,\r\n      \"runningTaskID\": \"string\",\r\n      \"currIsOneWay\": true,\r\n      \"currTime\": \"2022-10-14T06:01:04.517Z\",\r\n      \"currLat\": 0,\r\n      \"currLng\": 0,\r\n      \"currTPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:01:04.517Z\",\r\n          \"close\": \"2022-10-14T06:01:04.517Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:01:04.517Z\"\r\n        }\r\n      ],\r\n      \"tPointCompleted\": 0\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupport",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"FTLSupporter",
+								"FTLSupport"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "e899d788-55bf-4171-8b41-bbe553bd9349",
+							"name": "FTLSupport engine accepted the request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"taskList\": [\r\n    {\r\n      \"taskID\": \"string\",\r\n      \"cargoType\": \"string\",\r\n      \"truckTypes\": \"string\",\r\n      \"weight\": 0,\r\n      \"client\": \"string\",\r\n      \"tPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:01:04.517Z\",\r\n          \"close\": \"2022-10-14T06:01:04.517Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:01:04.517Z\"\r\n        }\r\n      ],\r\n      \"inclTruckProps\": \"string\",\r\n      \"exclTruckProps\": \"string\"\r\n    }\r\n  ],\r\n  \"truckList\": [\r\n    {\r\n      \"truckID\": \"string\",\r\n      \"gvwr\": 0,\r\n      \"capacity\": 0,\r\n      \"truckType\": \"string\",\r\n      \"cargoTypes\": \"string\",\r\n      \"fixCost\": 0,\r\n      \"kmCost\": 0,\r\n      \"relocateCost\": 0,\r\n      \"maxKM\": 0,\r\n      \"maxDuration\": 0,\r\n      \"engineEuro\": 0,\r\n      \"eTollCat\": 0,\r\n      \"rZones\": \"string\",\r\n      \"width\": 0,\r\n      \"height\": 0,\r\n      \"truckProps\": \"string\",\r\n      \"remainingDriveTime\": 0,\r\n      \"remainingRestTime\": 0,\r\n      \"remainingTimeToStartDailyRest\": 0,\r\n      \"remainingDailyDriveTime\": 0,\r\n      \"remainingDailyRestTime\": 0,\r\n      \"remainingWeeklyDriveTime\": 0,\r\n      \"remainingWeeklyRestTime\": 0,\r\n      \"remainingTwoWeeklyDriveTime\": 0,\r\n      \"remainingTwoWeeklyRestTime\": 0,\r\n      \"remainingRestTimeToCompensate\": 0,\r\n      \"truckTaskType\": 0,\r\n      \"runningTaskID\": \"string\",\r\n      \"currIsOneWay\": true,\r\n      \"currTime\": \"2022-10-14T06:01:04.517Z\",\r\n      \"currLat\": 0,\r\n      \"currLng\": 0,\r\n      \"currTPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:01:04.517Z\",\r\n          \"close\": \"2022-10-14T06:01:04.517Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:01:04.517Z\"\r\n        }\r\n      ],\r\n      \"tPointCompleted\": 0\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupport",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupport"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"requestID\": \"123456789\"\n}"
+						},
+						{
+							"id": "34ad509b-5274-4524-b083-b8f8c0346833",
+							"name": "FTLSupportCommand has syntax error or failed at validation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"taskList\": [\r\n    {\r\n      \"taskID\": \"string\",\r\n      \"cargoType\": \"string\",\r\n      \"truckTypes\": \"string\",\r\n      \"weight\": 0,\r\n      \"client\": \"string\",\r\n      \"tPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:01:04.517Z\",\r\n          \"close\": \"2022-10-14T06:01:04.517Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:01:04.517Z\"\r\n        }\r\n      ],\r\n      \"inclTruckProps\": \"string\",\r\n      \"exclTruckProps\": \"string\"\r\n    }\r\n  ],\r\n  \"truckList\": [\r\n    {\r\n      \"truckID\": \"string\",\r\n      \"gvwr\": 0,\r\n      \"capacity\": 0,\r\n      \"truckType\": \"string\",\r\n      \"cargoTypes\": \"string\",\r\n      \"fixCost\": 0,\r\n      \"kmCost\": 0,\r\n      \"relocateCost\": 0,\r\n      \"maxKM\": 0,\r\n      \"maxDuration\": 0,\r\n      \"engineEuro\": 0,\r\n      \"eTollCat\": 0,\r\n      \"rZones\": \"string\",\r\n      \"width\": 0,\r\n      \"height\": 0,\r\n      \"truckProps\": \"string\",\r\n      \"remainingDriveTime\": 0,\r\n      \"remainingRestTime\": 0,\r\n      \"remainingTimeToStartDailyRest\": 0,\r\n      \"remainingDailyDriveTime\": 0,\r\n      \"remainingDailyRestTime\": 0,\r\n      \"remainingWeeklyDriveTime\": 0,\r\n      \"remainingWeeklyRestTime\": 0,\r\n      \"remainingTwoWeeklyDriveTime\": 0,\r\n      \"remainingTwoWeeklyRestTime\": 0,\r\n      \"remainingRestTimeToCompensate\": 0,\r\n      \"truckTaskType\": 0,\r\n      \"runningTaskID\": \"string\",\r\n      \"currIsOneWay\": true,\r\n      \"currTime\": \"2022-10-14T06:01:04.517Z\",\r\n      \"currLat\": 0,\r\n      \"currLng\": 0,\r\n      \"currTPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:01:04.517Z\",\r\n          \"close\": \"2022-10-14T06:01:04.517Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:01:04.517Z\"\r\n        }\r\n      ],\r\n      \"tPointCompleted\": 0\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupport",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupport"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"errorCode\": 1234,\n    \"errorMessages\": [\n        \"lorem isprum...\",\n        \"lorem isprum...\"\n    ]\n}"
+						},
+						{
+							"id": "f583cc32-3c93-4463-bf85-703669ac4139",
+							"name": "Unauthorized access",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"taskList\": [\r\n    {\r\n      \"taskID\": \"string\",\r\n      \"cargoType\": \"string\",\r\n      \"truckTypes\": \"string\",\r\n      \"weight\": 0,\r\n      \"client\": \"string\",\r\n      \"tPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:01:04.517Z\",\r\n          \"close\": \"2022-10-14T06:01:04.517Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:01:04.517Z\"\r\n        }\r\n      ],\r\n      \"inclTruckProps\": \"string\",\r\n      \"exclTruckProps\": \"string\"\r\n    }\r\n  ],\r\n  \"truckList\": [\r\n    {\r\n      \"truckID\": \"string\",\r\n      \"gvwr\": 0,\r\n      \"capacity\": 0,\r\n      \"truckType\": \"string\",\r\n      \"cargoTypes\": \"string\",\r\n      \"fixCost\": 0,\r\n      \"kmCost\": 0,\r\n      \"relocateCost\": 0,\r\n      \"maxKM\": 0,\r\n      \"maxDuration\": 0,\r\n      \"engineEuro\": 0,\r\n      \"eTollCat\": 0,\r\n      \"rZones\": \"string\",\r\n      \"width\": 0,\r\n      \"height\": 0,\r\n      \"truckProps\": \"string\",\r\n      \"remainingDriveTime\": 0,\r\n      \"remainingRestTime\": 0,\r\n      \"remainingTimeToStartDailyRest\": 0,\r\n      \"remainingDailyDriveTime\": 0,\r\n      \"remainingDailyRestTime\": 0,\r\n      \"remainingWeeklyDriveTime\": 0,\r\n      \"remainingWeeklyRestTime\": 0,\r\n      \"remainingTwoWeeklyDriveTime\": 0,\r\n      \"remainingTwoWeeklyRestTime\": 0,\r\n      \"remainingRestTimeToCompensate\": 0,\r\n      \"truckTaskType\": 0,\r\n      \"runningTaskID\": \"string\",\r\n      \"currIsOneWay\": true,\r\n      \"currTime\": \"2022-10-14T06:01:04.517Z\",\r\n      \"currLat\": 0,\r\n      \"currLng\": 0,\r\n      \"currTPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:01:04.517Z\",\r\n          \"close\": \"2022-10-14T06:01:04.517Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:01:04.517Z\"\r\n        }\r\n      ],\r\n      \"tPointCompleted\": 0\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupport",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupport"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Calculate by FTLSupporterX engine",
+					"id": "c2b0aab6-d6a3-43e7-8770-15b1252332ce",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"taskList\": [\r\n    {\r\n      \"taskID\": \"string\",\r\n      \"cargoType\": \"string\",\r\n      \"truckTypes\": \"string\",\r\n      \"weight\": 0,\r\n      \"client\": \"string\",\r\n      \"tPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:05:15.285Z\",\r\n          \"close\": \"2022-10-14T06:05:15.285Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:05:15.285Z\"\r\n        }\r\n      ],\r\n      \"inclTruckProps\": \"string\",\r\n      \"exclTruckProps\": \"string\"\r\n    }\r\n  ],\r\n  \"truckList\": [\r\n    {\r\n      \"truckID\": \"string\",\r\n      \"gvwr\": 0,\r\n      \"capacity\": 0,\r\n      \"truckType\": \"string\",\r\n      \"cargoTypes\": \"string\",\r\n      \"fixCost\": 0,\r\n      \"kmCost\": 0,\r\n      \"relocateCost\": 0,\r\n      \"maxKM\": 0,\r\n      \"maxDuration\": 0,\r\n      \"engineEuro\": 0,\r\n      \"eTollCat\": 0,\r\n      \"rZones\": \"string\",\r\n      \"width\": 0,\r\n      \"height\": 0,\r\n      \"truckProps\": \"string\",\r\n      \"remainingDriveTime\": 0,\r\n      \"remainingRestTime\": 0,\r\n      \"remainingTimeToStartDailyRest\": 0,\r\n      \"remainingDailyDriveTime\": 0,\r\n      \"remainingDailyRestTime\": 0,\r\n      \"remainingWeeklyDriveTime\": 0,\r\n      \"remainingWeeklyRestTime\": 0,\r\n      \"remainingTwoWeeklyDriveTime\": 0,\r\n      \"remainingTwoWeeklyRestTime\": 0,\r\n      \"remainingRestTimeToCompensate\": 0,\r\n      \"truckTaskType\": 0,\r\n      \"runningTaskID\": \"string\",\r\n      \"currIsOneWay\": true,\r\n      \"currTime\": \"2022-10-14T06:05:15.285Z\",\r\n      \"currLat\": 0,\r\n      \"currLng\": 0,\r\n      \"currTPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:05:15.285Z\",\r\n          \"close\": \"2022-10-14T06:05:15.285Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:05:15.285Z\"\r\n        }\r\n      ],\r\n      \"tPointCompleted\": 0\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupportX",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"FTLSupporter",
+								"FTLSupportX"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "9e5c5d3e-e80f-46ac-aa55-a0e96b0c8b14",
+							"name": "FTLSupport engine accepted the request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"taskList\": [\r\n    {\r\n      \"taskID\": \"string\",\r\n      \"cargoType\": \"string\",\r\n      \"truckTypes\": \"string\",\r\n      \"weight\": 0,\r\n      \"client\": \"string\",\r\n      \"tPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:05:15.285Z\",\r\n          \"close\": \"2022-10-14T06:05:15.285Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:05:15.285Z\"\r\n        }\r\n      ],\r\n      \"inclTruckProps\": \"string\",\r\n      \"exclTruckProps\": \"string\"\r\n    }\r\n  ],\r\n  \"truckList\": [\r\n    {\r\n      \"truckID\": \"string\",\r\n      \"gvwr\": 0,\r\n      \"capacity\": 0,\r\n      \"truckType\": \"string\",\r\n      \"cargoTypes\": \"string\",\r\n      \"fixCost\": 0,\r\n      \"kmCost\": 0,\r\n      \"relocateCost\": 0,\r\n      \"maxKM\": 0,\r\n      \"maxDuration\": 0,\r\n      \"engineEuro\": 0,\r\n      \"eTollCat\": 0,\r\n      \"rZones\": \"string\",\r\n      \"width\": 0,\r\n      \"height\": 0,\r\n      \"truckProps\": \"string\",\r\n      \"remainingDriveTime\": 0,\r\n      \"remainingRestTime\": 0,\r\n      \"remainingTimeToStartDailyRest\": 0,\r\n      \"remainingDailyDriveTime\": 0,\r\n      \"remainingDailyRestTime\": 0,\r\n      \"remainingWeeklyDriveTime\": 0,\r\n      \"remainingWeeklyRestTime\": 0,\r\n      \"remainingTwoWeeklyDriveTime\": 0,\r\n      \"remainingTwoWeeklyRestTime\": 0,\r\n      \"remainingRestTimeToCompensate\": 0,\r\n      \"truckTaskType\": 0,\r\n      \"runningTaskID\": \"string\",\r\n      \"currIsOneWay\": true,\r\n      \"currTime\": \"2022-10-14T06:05:15.285Z\",\r\n      \"currLat\": 0,\r\n      \"currLng\": 0,\r\n      \"currTPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:05:15.285Z\",\r\n          \"close\": \"2022-10-14T06:05:15.285Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:05:15.285Z\"\r\n        }\r\n      ],\r\n      \"tPointCompleted\": 0\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupportX",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupportX"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"requestID\": \"123456789\"\r\n}"
+						},
+						{
+							"id": "8da2873e-7452-4310-8911-f6bb863e8a25",
+							"name": "FTLSupportCommand has syntax error or failed at validation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"taskList\": [\r\n    {\r\n      \"taskID\": \"string\",\r\n      \"cargoType\": \"string\",\r\n      \"truckTypes\": \"string\",\r\n      \"weight\": 0,\r\n      \"client\": \"string\",\r\n      \"tPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:05:15.285Z\",\r\n          \"close\": \"2022-10-14T06:05:15.285Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:05:15.285Z\"\r\n        }\r\n      ],\r\n      \"inclTruckProps\": \"string\",\r\n      \"exclTruckProps\": \"string\"\r\n    }\r\n  ],\r\n  \"truckList\": [\r\n    {\r\n      \"truckID\": \"string\",\r\n      \"gvwr\": 0,\r\n      \"capacity\": 0,\r\n      \"truckType\": \"string\",\r\n      \"cargoTypes\": \"string\",\r\n      \"fixCost\": 0,\r\n      \"kmCost\": 0,\r\n      \"relocateCost\": 0,\r\n      \"maxKM\": 0,\r\n      \"maxDuration\": 0,\r\n      \"engineEuro\": 0,\r\n      \"eTollCat\": 0,\r\n      \"rZones\": \"string\",\r\n      \"width\": 0,\r\n      \"height\": 0,\r\n      \"truckProps\": \"string\",\r\n      \"remainingDriveTime\": 0,\r\n      \"remainingRestTime\": 0,\r\n      \"remainingTimeToStartDailyRest\": 0,\r\n      \"remainingDailyDriveTime\": 0,\r\n      \"remainingDailyRestTime\": 0,\r\n      \"remainingWeeklyDriveTime\": 0,\r\n      \"remainingWeeklyRestTime\": 0,\r\n      \"remainingTwoWeeklyDriveTime\": 0,\r\n      \"remainingTwoWeeklyRestTime\": 0,\r\n      \"remainingRestTimeToCompensate\": 0,\r\n      \"truckTaskType\": 0,\r\n      \"runningTaskID\": \"string\",\r\n      \"currIsOneWay\": true,\r\n      \"currTime\": \"2022-10-14T06:05:15.285Z\",\r\n      \"currLat\": 0,\r\n      \"currLng\": 0,\r\n      \"currTPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:05:15.285Z\",\r\n          \"close\": \"2022-10-14T06:05:15.285Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:05:15.285Z\"\r\n        }\r\n      ],\r\n      \"tPointCompleted\": 0\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupportX",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupportX"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"errorCode\": 1234,\r\n    \"errorMessages\": [\r\n        \"lorem isprum...\",\r\n        \"lorem isprum...\"\r\n    ]\r\n}"
+						},
+						{
+							"id": "d9c0c387-69b1-4a73-8aff-54e90233bc6b",
+							"name": "Unauthorized access",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"taskList\": [\r\n    {\r\n      \"taskID\": \"string\",\r\n      \"cargoType\": \"string\",\r\n      \"truckTypes\": \"string\",\r\n      \"weight\": 0,\r\n      \"client\": \"string\",\r\n      \"tPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:05:15.285Z\",\r\n          \"close\": \"2022-10-14T06:05:15.285Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:05:15.285Z\"\r\n        }\r\n      ],\r\n      \"inclTruckProps\": \"string\",\r\n      \"exclTruckProps\": \"string\"\r\n    }\r\n  ],\r\n  \"truckList\": [\r\n    {\r\n      \"truckID\": \"string\",\r\n      \"gvwr\": 0,\r\n      \"capacity\": 0,\r\n      \"truckType\": \"string\",\r\n      \"cargoTypes\": \"string\",\r\n      \"fixCost\": 0,\r\n      \"kmCost\": 0,\r\n      \"relocateCost\": 0,\r\n      \"maxKM\": 0,\r\n      \"maxDuration\": 0,\r\n      \"engineEuro\": 0,\r\n      \"eTollCat\": 0,\r\n      \"rZones\": \"string\",\r\n      \"width\": 0,\r\n      \"height\": 0,\r\n      \"truckProps\": \"string\",\r\n      \"remainingDriveTime\": 0,\r\n      \"remainingRestTime\": 0,\r\n      \"remainingTimeToStartDailyRest\": 0,\r\n      \"remainingDailyDriveTime\": 0,\r\n      \"remainingDailyRestTime\": 0,\r\n      \"remainingWeeklyDriveTime\": 0,\r\n      \"remainingWeeklyRestTime\": 0,\r\n      \"remainingTwoWeeklyDriveTime\": 0,\r\n      \"remainingTwoWeeklyRestTime\": 0,\r\n      \"remainingRestTimeToCompensate\": 0,\r\n      \"truckTaskType\": 0,\r\n      \"runningTaskID\": \"string\",\r\n      \"currIsOneWay\": true,\r\n      \"currTime\": \"2022-10-14T06:05:15.285Z\",\r\n      \"currLat\": 0,\r\n      \"currLng\": 0,\r\n      \"currTPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-14T06:05:15.285Z\",\r\n          \"close\": \"2022-10-14T06:05:15.285Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-14T06:05:15.285Z\"\r\n        }\r\n      ],\r\n      \"tPointCompleted\": 0\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupportX",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupportX"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"id": "c52ea0dc-2821-4ebb-865b-8952157530c6"
+		},
+		{
+			"name": "get the 'isalive' status of the FTLSupporter service",
+			"id": "a31ebe70-ee2c-49ea-9c8a-405af07f2df8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/IsAlive",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"IsAlive"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "13aa938b-d22b-4202-8412-ffb680dfd8fc",
+					"name": "FTLSupporter engine runs",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/IsAlive",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"IsAlive"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"version\": \"1.0\"\n}"
+				},
+				{
+					"id": "50ee4ee7-1874-4a94-95af-5117b3f293a1",
+					"name": "Unauthorized access",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/IsAlive",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"IsAlive"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-Api-Key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "<API Key>",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "3f1a9dd1-5128-4b41-9472-67e5f88212a0",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "aaff18bb-20c2-4345-afac-3f89a3c497d7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "f8c66df6-e13d-4627-a16b-6383e72aa308",
+			"key": "baseUrl",
+			"value": "{baseURL}",
+			"type": "string"
+		}
+	]
+}
