@@ -1,0 +1,705 @@
+{
+	"info": {
+		"_postman_id": "1eeb44b3-39a3-46e7-a5c4-0ae0aa87856d",
+		"name": "FTLSupporterREST_API",
+		"description": "FTLSupport REST API Service\n\nContact Support:  \nName: Pratix  \nEmail: [szenasy@pratix.hu](szenasy@pratix.hu)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16717808"
+	},
+	"item": [
+		{
+			"name": "api/v1/FTL Supporter",
+			"item": [
+				{
+					"name": "/api/v1/FTLSupporter/FTLSupport",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-KEY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"taskList\": [\n    {\n      \"TaskID\": \"6035034\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"BOLL\\u00D3K J\\u00C1NOS\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F376590\",\n          \"Name\": \"DAPANINOCAFF\\u00C9KFT.\",\n          \"Addr\": \"1239 BUDAPEST Eur\\u00F3pau6\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.3759111217,\n          \"Lng\": 19.126231670399999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F346045\",\n          \"Name\": \"NY\\u00CDREGYH\\u00C1ZA\",\n          \"Addr\": \"4400 NY\\u00CDREGYH\\u00C1ZA K\\u00E1lvin t\\u00E9r 5. FSZ \\u00E1tmeni t\\u00E1rol\\u00F3\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.954970037599999,\n          \"Lng\": 21.7133080959,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035035\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"BOLL\\u00D3K J\\u00C1NOS\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F376590\",\n          \"Name\": \"DAPANINOCAFF\\u00C9KFT.\",\n          \"Addr\": \"1239 BUDAPEST Eur\\u00F3pau6\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.3759111217,\n          \"Lng\": 19.126231670399999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F274594\",\n          \"Name\": \"BALATON SOUND\",\n          \"Addr\": \"8621 ZAM\\u00C1RDI STRAND UTCA 0.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 46.861389160199998,\n          \"Lng\": 17.940326690700001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035022\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"ABA \\u00C9LELEMISZERIPARI \\u00C9S KERESKEDELMI ZRT\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F414584\",\n          \"Name\": \"DELFORG KFT.\",\n          \"Addr\": \"2330 DUNAHARASZTI F\\u0150 \\u00DAT 270.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.339910000000003,\n          \"Lng\": 19.071349999999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F142912\",\n          \"Name\": \"KELET3 - Z\\u00D6LDKER -  PAP BRIGITTA\",\n          \"Addr\": \"5000 SZOLNOK T\\u00D3SZEGI \\u00DAT. 5.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.161650999999999,\n          \"Lng\": 20.174700000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035023\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"DPM SZORTIMENT KERESKEDELMI \\u00C9S SZOLG\\u00C1LTAT\\u00D3 KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F78370\",\n          \"Name\": \"DPM SZORTIMENT KERESKEDELMI \\u00C9S SZOLG\\u00C1LTAT\\u00D3 KFT.\",\n          \"Addr\": \"2730 ALBERTIRSA H\\u0151s\\u00F6k \\u00FAtja 15/a\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.243290000000002,\n          \"Lng\": 19.60408,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F229106\",\n          \"Name\": \"JEHOVA TANUI\",\n          \"Addr\": \"9700 SZOMBATHELY \\u00C1RP\\u00C1D U 102\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.223500100000003,\n          \"Lng\": 16.620843000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035024\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"AAA T\\u00C9RK\\u0150 KFT\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F325719\",\n          \"Name\": \"GRAVIT\\u00C1CI\\u00D3 KFT.\",\n          \"Addr\": \"9700 SZOMBATHELY S\\u00E1gi \\u00FAt 3.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.233567200000003,\n          \"Lng\": 16.640378900000002,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F285042\",\n          \"Name\": \"BI MARKET KFT.\",\n          \"Addr\": \"6800 H\\u00D3DMEZ\\u0150V\\u00C1S\\u00C1RHELY Kutasi \\u00FAt 67\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.428895018200002,\n          \"Lng\": 20.3467226028,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035025\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"ADR LOGISTICS KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F217663\",\n          \"Name\": \"BELLOZZO KFT. - CATONE KFT. \\u2013 FUSION ZRT. WAREHOUSE\",\n          \"Addr\": \"2040 BUDA\\u00D6RS Vas\\u00FAt u. 9.\",\n          \"Open\": \"2022-10-19T07:00:00\",\n          \"Close\": \"2022-10-19T13:00:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.445684700000001,\n          \"Lng\": 18.9660817,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F364946\",\n          \"Name\": \"CSER ISTV\\u00C1N E.V.\",\n          \"Addr\": \"8636 BALATONSZEMES BAJCSY-ZS. U. 42.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.807883099999998,\n          \"Lng\": 17.781090899999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035026\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"EURO BETON KER.\\u00C9S GY\\u00C1RT.KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F428598\",\n          \"Name\": \"COLORSTART MEDIA KERESKEDELMI \\u00C9S SZOLG\\u00C1LTAT\\u00D3 KFT.\",\n          \"Addr\": \"4027 DEBRECEN F\\u00FCredi utca 76.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.5401579989,\n          \"Lng\": 21.606438159900001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F365354\",\n          \"Name\": \"B\\u00C9K\\u00C9S DR\\u00C9N KFT\",\n          \"Addr\": \"5630 B\\u00C9K\\u00C9S PETOFI S. U. 20.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.76831,\n          \"Lng\": 21.134209999999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035027\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"EURO BETON KER.\\u00C9S GY\\u00C1RT.KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F428598\",\n          \"Name\": \"COLORSTART MEDIA KERESKEDELMI \\u00C9S SZOLG\\u00C1LTAT\\u00D3 KFT.\",\n          \"Addr\": \"4027 DEBRECEN F\\u00FCredi utca 76.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.5401579989,\n          \"Lng\": 21.606438159900001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F209969\",\n          \"Name\": \"GYULA\",\n          \"Addr\": \"5700 GYULA Csabai\\u00FAt.3.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.6421002051,\n          \"Lng\": 21.259660720799999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035028\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"A-TRANSPORT-91 KFT\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F390257\",\n          \"Name\": \"DACHSER EINHELL RAKT\\u00C1R\",\n          \"Addr\": \"2085 PILISV\\u00D6R\\u00D6SV\\u00C1R IPARTELEP U 1\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.614175500000002,\n          \"Lng\": 18.9309388,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F205425\",\n          \"Name\": \"KECSKEMET\",\n          \"Addr\": \"6000 KECSKEM\\u00C9T Talf\\u00E1ja 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.933224238900003,\n          \"Lng\": 19.666171073899999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035029\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"A-TRANSPORT-91 KFT\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F390257\",\n          \"Name\": \"DACHSER EINHELL RAKT\\u00C1R\",\n          \"Addr\": \"2085 PILISV\\u00D6R\\u00D6SV\\u00C1R IPARTELEP U 1\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.614175500000002,\n          \"Lng\": 18.9309388,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F357214\",\n          \"Name\": \"SZEGED DISZTR.RAKT.-SZILK\",\n          \"Addr\": \"6728 SZEGED Budapesti \\u00FAt 34.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.284429645300001,\n          \"Lng\": 20.0899386406,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035030\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"EU TRUCK KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F363569\",\n          \"Name\": \"GALGA-COOP 502. SZ. SZUPER COOP\",\n          \"Addr\": \"2192 H\\u00C9V\\u00CDZGY\\u00D6RK V\\u00D6R\\u00D6SMARTY U. 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.628709999999998,\n          \"Lng\": 19.519210000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F408757\",\n          \"Name\": \"HANRO SKINY LOGISZTIK AI KFT.\",\n          \"Addr\": \"9027 GY\\u0150R aA u.1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.683839999999996,\n          \"Lng\": 17.613119999999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035031\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"EU TRUCK KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F363569\",\n          \"Name\": \"GALGA-COOP 502. SZ. SZUPER COOP\",\n          \"Addr\": \"2192 H\\u00C9V\\u00CDZGY\\u00D6RK V\\u00D6R\\u00D6SMARTY U. 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.628709999999998,\n          \"Lng\": 19.519210000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F218999\",\n          \"Name\": \"DS SMITH KFT. DUNAHARASZTI\",\n          \"Addr\": \"2330 DUNAHARASZTI F\\u0151 u.1\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.3584198,\n          \"Lng\": 19.0851705,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035032\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"AGROFOL-KER KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F143712\",\n          \"Name\": \"AGROFOL-KER KFT.\",\n          \"Addr\": \"3015 CS\\u00C1NY Szabads\\u00E1g t\\u00E9r 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.692898999999997,\n          \"Lng\": 19.784814000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F233893\",\n          \"Name\": \"ERMA-PLUSZ KFT \\u0022 ERMA-PLUSZ\\u0022 KFT\",\n          \"Addr\": \"2022 TAHI M\\u00F3ricz zsigmond u 83\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.738950500000001,\n          \"Lng\": 19.087259299999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035033\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"AGROFOL-KER KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F143712\",\n          \"Name\": \"AGROFOL-KER KFT.\",\n          \"Addr\": \"3015 CS\\u00C1NY Szabads\\u00E1g t\\u00E9r 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.692898999999997,\n          \"Lng\": 19.784814000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F441058\",\n          \"Name\": \"CLEANOPT KFT\",\n          \"Addr\": \"8000 SZ\\u00C9KESFEH\\u00C9RV\\u00C1R Bab\\u00E9r u 1\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.184058700000001,\n          \"Lng\": 18.484621300000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    }\n  ],\n  \"truckList\": [\n    {\n      \"TruckID\": \"RDX-365\",\n      \"GVWR\": 40000,\n      \"Capacity\": 25340,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 16200,\n      \"RemainingRestTime\": 2700,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 36000,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 201600,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 324000,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 0,\n      \"RunningTaskID\": \"\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:09:00+02:00\",\n      \"CurrLat\": 46.888628333333337,\n      \"CurrLng\": 16.891426666666668,\n      \"CurrTPoints\": [\n        \n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"NVC-413\",\n      \"GVWR\": 40000,\n      \"Capacity\": 37445,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 5,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 0,\n      \"RunningTaskID\": \"\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:21:00+02:00\",\n      \"CurrLat\": 46.887993333333334,\n      \"CurrLng\": 19.604441666666666,\n      \"CurrTPoints\": [\n        \n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"NVC-414\",\n      \"GVWR\": 40000,\n      \"Capacity\": 37445,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 5,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035019\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:21:00+02:00\",\n      \"CurrLat\": 46.798258333333337,\n      \"CurrLng\": 19.628885,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J108017\",\n          \"Name\": \"\\u00C9M\\u00C1SZ  NYRT.\",\n          \"Addr\": \"3525 MISKOLC D\\u00F3zsa Gy\\u00F6rgy u 13\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 48.106782000000003,\n          \"Lng\": 20.778061999999998,\n          \"RealArrival\": \"2022-10-19T10:42:00\",\n          \"RealDeparture\": \"2022-10-19T12:42:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J394501\",\n          \"Name\": \"DOH\\u00C1NYBOLT CSONT.\",\n          \"Addr\": \"1181 BUDAPEST Csontv\\u00E1ry utca 30\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.4395713806,\n          \"Lng\": 19.170392990100002,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J108017\",\n          \"Name\": \"\\u00C9M\\u00C1SZ  NYRT.\",\n          \"Addr\": \"3525 MISKOLC D\\u00F3zsa Gy\\u00F6rgy u 13\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 48.106782000000003,\n          \"Lng\": 20.778061999999998,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J191994\",\n          \"Name\": \"TIN\\u00D3DI \\u00C1LT.ISK\",\n          \"Addr\": \"3300 EGER VALLON U.2.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.919410599999999,\n          \"Lng\": 20.3743379,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"NVC-415\",\n      \"GVWR\": 40000,\n      \"Capacity\": 37445,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 5,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035021\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:17:00+02:00\",\n      \"CurrLat\": 46.887718333333332,\n      \"CurrLng\": 19.69183,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J284381\",\n          \"Name\": \"ML5 TRANS TEAM KFT.\",\n          \"Addr\": \"1223 BUDAPEST Nagyt\\u00E9t\\u00E9nyi \\u00FAt 180-196.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.402720100000003,\n          \"Lng\": 19.009833400000002,\n          \"RealArrival\": \"2022-10-19T10:42:00\",\n          \"RealDeparture\": \"2022-10-19T11:42:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J368281\",\n          \"Name\": \"Emil Molt Alap\\u00EDtv\\u00E1ny\",\n          \"Addr\": \"2000 SZENTENDRE Z\\u00F6ld utca 17.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.684100000000001,\n          \"Lng\": 19.069379999999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"MZE-831\",\n      \"GVWR\": 40000,\n      \"Capacity\": 24961,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035020\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:13:00+02:00\",\n      \"CurrLat\": 47.345745000000001,\n      \"CurrLng\": 19.121483333333334,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J284381\",\n          \"Name\": \"ML5 TRANS TEAM KFT.\",\n          \"Addr\": \"1223 BUDAPEST Nagyt\\u00E9t\\u00E9nyi \\u00FAt 180-196.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.402720100000003,\n          \"Lng\": 19.009833400000002,\n          \"RealArrival\": \"2022-10-19T10:46:00\",\n          \"RealDeparture\": \"2022-10-19T11:46:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J303328\",\n          \"Name\": \"GO-BOKSZ KFT.\",\n          \"Addr\": \"2750 NAGYK\\u0150R\\u00D6S J\\u00F3zsef Attila u. 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.034480000000002,\n          \"Lng\": 19.761230000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"MZE-845\",\n      \"GVWR\": 40000,\n      \"Capacity\": 24961,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035013\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:21:00+02:00\",\n      \"CurrLat\": 47.378709999999998,\n      \"CurrLng\": 19.267628333333334,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J338666\",\n          \"Name\": \"AXICONT KFT.\",\n          \"Addr\": \"1103 BUDAPEST Gy\\u00F6mr\\u0151i \\u00FAt 1053.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.4672859,\n          \"Lng\": 19.152546699999998,\n          \"RealArrival\": \"2022-10-19T09:10:00\",\n          \"RealDeparture\": \"2022-10-19T10:10:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J172160\",\n          \"Name\": \"G\\u00D3TIKA TATAB\\u00C1NYA\",\n          \"Addr\": \"2880 TATAB\\u00C1NYA T\\u00C1NCSICS M.\\u00FAt 2/F\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.567781811800003,\n          \"Lng\": 18.432912826500001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"RTF-038\",\n      \"GVWR\": 40000,\n      \"Capacity\": 37470,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035014\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:15:00+02:00\",\n      \"CurrLat\": 47.461272999999998,\n      \"CurrLng\": 19.047416999999999,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J394501\",\n          \"Name\": \"DOH\\u00C1NYBOLT CSONT.\",\n          \"Addr\": \"1181 BUDAPEST Csontv\\u00E1ry utca 30\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.4395713806,\n          \"Lng\": 19.170392990100002,\n          \"RealArrival\": \"2022-10-19T09:40:00\",\n          \"RealDeparture\": \"2022-10-19T10:40:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J358427\",\n          \"Name\": \"B\\u00C1TOR T\\u00C1BOR ALAP\\u00CDTV\\u00C1NY\",\n          \"Addr\": \"3000 HATVAN !Delel\\u0151 \\u00FAt Hrsz 220/1.GPS: 47!39.004\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.655850000000001,\n          \"Lng\": 19.7028,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J405536\",\n          \"Name\": \"TESK\\u00C1NDI AGR\\u00C1R-COOP KFT.- FLANSCH-TECH KFT\",\n          \"Addr\": \"1211 BUDAPEST K\\u00F6zponti \\u00FAt 18.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.430390000000003,\n          \"Lng\": 19.06146,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J191994\",\n          \"Name\": \"TIN\\u00D3DI \\u00C1LT.ISK\",\n          \"Addr\": \"3300 EGER VALLON U.2.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.919410599999999,\n          \"Lng\": 20.3743379,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"RTF-039\",\n      \"GVWR\": 40000,\n      \"Capacity\": 37470,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035017\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:21:00+02:00\",\n      \"CurrLat\": 46.963416666666667,\n      \"CurrLng\": 18.943063333333335,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J43905\",\n          \"Name\": \"IP \\u00DCZEMELTET\\u00C9SI OSZT\\u00C1LY  P\\u00C9CS\",\n          \"Addr\": \"7630 P\\u00C9CS R\\u00C1K\\u00D3CZI U.19. I. em. 124.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 46.072887100000003,\n          \"Lng\": 18.226403999999999,\n          \"RealArrival\": \"2022-10-19T10:24:00\",\n          \"RealDeparture\": \"2022-10-19T12:24:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J396954\",\n          \"Name\": \"DELIVERY HERO DMART HUNGARY KFT./SZEGED\",\n          \"Addr\": \"6725 SZEGED K\\u00C1LV\\u00C1RIA SGT. 87/A.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 46.25414,\n          \"Lng\": 20.11713,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"PPA-136\",\n      \"GVWR\": 40000,\n      \"Capacity\": 23476,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035016\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:21:29+02:00\",\n      \"CurrLat\": 46.008718333333334,\n      \"CurrLng\": 18.664735,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J43905\",\n          \"Name\": \"IP \\u00DCZEMELTET\\u00C9SI OSZT\\u00C1LY  P\\u00C9CS\",\n          \"Addr\": \"7630 P\\u00C9CS R\\u00C1K\\u00D3CZI U.19. I. em. 124.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 46.072887100000003,\n          \"Lng\": 18.226403999999999,\n          \"RealArrival\": \"2022-10-19T10:20:00\",\n          \"RealDeparture\": \"2022-10-19T12:20:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J235018\",\n          \"Name\": \"DR. T\\u00D3TH RAM\\u00D3NA\",\n          \"Addr\": \"1021 BUDAPEST Kuruclesi \\u00FAt 35C, 1. emelet IV.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.524624000000003,\n          \"Lng\": 18.977276499999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupport",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"FTLSupporter",
+								"FTLSupport"
+							]
+						},
+						"description": "Mezők értelmezése\n\n<img src=\"https://content.pstmn.io/663d7068-aed3-47f5-962b-f2e798ae8d91/aW1hZ2UucG5n\" alt=\"\" height=\"1075\" width=\"533\">"
+					},
+					"response": [
+						{
+							"name": "FTLSupport engine accepted the request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "X-API-KEY",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"taskList\": [\n    {\n      \"taskID\": \"string\",\n      \"cargoType\": \"string\",\n      \"truckTypes\": \"string\",\n      \"weight\": 0,\n      \"client\": \"string\",\n      \"tPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:15:13.677Z\",\n          \"close\": \"2022-10-20T19:15:13.677Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:15:13.677Z\"\n        }\n      ],\n      \"inclTruckProps\": \"string\",\n      \"exclTruckProps\": \"string\"\n    }\n  ],\n  \"truckList\": [\n    {\n      \"truckID\": \"string\",\n      \"gvwr\": 0,\n      \"capacity\": 0,\n      \"truckType\": \"string\",\n      \"cargoTypes\": \"string\",\n      \"fixCost\": 0,\n      \"kmCost\": 0,\n      \"relocateCost\": 0,\n      \"maxKM\": 0,\n      \"maxDuration\": 0,\n      \"engineEuro\": 0,\n      \"eTollCat\": 0,\n      \"rZones\": \"string\",\n      \"width\": 0,\n      \"height\": 0,\n      \"truckProps\": \"string\",\n      \"remainingDriveTime\": 0,\n      \"remainingRestTime\": 0,\n      \"remainingTimeToStartDailyRest\": 0,\n      \"remainingDailyDriveTime\": 0,\n      \"remainingDailyRestTime\": 0,\n      \"remainingWeeklyDriveTime\": 0,\n      \"remainingWeeklyRestTime\": 0,\n      \"remainingTwoWeeklyDriveTime\": 0,\n      \"remainingTwoWeeklyRestTime\": 0,\n      \"remainingRestTimeToCompensate\": 0,\n      \"truckTaskType\": 0,\n      \"runningTaskID\": \"string\",\n      \"currIsOneWay\": true,\n      \"currTime\": \"2022-10-20T19:15:13.677Z\",\n      \"currLat\": 0,\n      \"currLng\": 0,\n      \"currTPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:15:13.677Z\",\n          \"close\": \"2022-10-20T19:15:13.677Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:15:13.677Z\"\n        }\n      ],\n      \"tPointCompleted\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupport",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupport"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"requestID\": \"string\",\n  \"taskList\": [\n    {\n      \"taskID\": \"string\",\n      \"cargoType\": \"string\",\n      \"truckTypes\": \"string\",\n      \"weight\": 0,\n      \"client\": \"string\",\n      \"tPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:15:13.687Z\",\n          \"close\": \"2022-10-20T19:15:13.687Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:15:13.687Z\",\n          \"realDeparture\": \"2022-10-20T19:15:13.687Z\",\n          \"arrInExtraPeriod\": true\n        }\n      ],\n      \"inclTruckProps\": \"string\",\n      \"exclTruckProps\": \"string\"\n    }\n  ],\n  \"truckList\": [\n    {\n      \"truckID\": \"string\",\n      \"gvwr\": 0,\n      \"capacity\": 0,\n      \"truckType\": \"string\",\n      \"cargoTypes\": \"string\",\n      \"fixCost\": 0,\n      \"kmCost\": 0,\n      \"relocateCost\": 0,\n      \"maxKM\": 0,\n      \"maxDuration\": 0,\n      \"engineEuro\": 0,\n      \"eTollCat\": 0,\n      \"rZones\": \"string\",\n      \"width\": 0,\n      \"height\": 0,\n      \"truckProps\": \"string\",\n      \"remainingDriveTime\": 0,\n      \"remainingRestTime\": 0,\n      \"remainingTimeToStartDailyRest\": 0,\n      \"remainingDailyDriveTime\": 0,\n      \"remainingDailyRestTime\": 0,\n      \"remainingWeeklyDriveTime\": 0,\n      \"remainingWeeklyRestTime\": 0,\n      \"remainingTwoWeeklyDriveTime\": 0,\n      \"remainingTwoWeeklyRestTime\": 0,\n      \"remainingRestTimeToCompensate\": 0,\n      \"truckTaskType\": 0,\n      \"runningTaskID\": \"string\",\n      \"currIsOneWay\": true,\n      \"currTime\": \"2022-10-20T19:15:13.687Z\",\n      \"currLat\": 0,\n      \"currLng\": 0,\n      \"currTPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:15:13.687Z\",\n          \"close\": \"2022-10-20T19:15:13.687Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:15:13.687Z\",\n          \"realDeparture\": \"2022-10-20T19:15:13.687Z\",\n          \"arrInExtraPeriod\": true\n        }\n      ],\n      \"tPointCompleted\": 0\n    }\n  ],\n  \"maxTruckDistance\": 0,\n  \"result\": [\n    {\n      \"status\": 0,\n      \"objectName\": \"string\",\n      \"itemID\": \"string\",\n      \"data\": \"string\"\n    }\n  ],\n  \"hasError\": true\n}"
+						},
+						{
+							"name": "FTLSupportCommand has syntax error or failed at validation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "X-API-KEY",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"taskList\": [\n    {\n      \"taskID\": \"string\",\n      \"cargoType\": \"string\",\n      \"truckTypes\": \"string\",\n      \"weight\": 0,\n      \"client\": \"string\",\n      \"tPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:15:13.677Z\",\n          \"close\": \"2022-10-20T19:15:13.677Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:15:13.677Z\"\n        }\n      ],\n      \"inclTruckProps\": \"string\",\n      \"exclTruckProps\": \"string\"\n    }\n  ],\n  \"truckList\": [\n    {\n      \"truckID\": \"string\",\n      \"gvwr\": 0,\n      \"capacity\": 0,\n      \"truckType\": \"string\",\n      \"cargoTypes\": \"string\",\n      \"fixCost\": 0,\n      \"kmCost\": 0,\n      \"relocateCost\": 0,\n      \"maxKM\": 0,\n      \"maxDuration\": 0,\n      \"engineEuro\": 0,\n      \"eTollCat\": 0,\n      \"rZones\": \"string\",\n      \"width\": 0,\n      \"height\": 0,\n      \"truckProps\": \"string\",\n      \"remainingDriveTime\": 0,\n      \"remainingRestTime\": 0,\n      \"remainingTimeToStartDailyRest\": 0,\n      \"remainingDailyDriveTime\": 0,\n      \"remainingDailyRestTime\": 0,\n      \"remainingWeeklyDriveTime\": 0,\n      \"remainingWeeklyRestTime\": 0,\n      \"remainingTwoWeeklyDriveTime\": 0,\n      \"remainingTwoWeeklyRestTime\": 0,\n      \"remainingRestTimeToCompensate\": 0,\n      \"truckTaskType\": 0,\n      \"runningTaskID\": \"string\",\n      \"currIsOneWay\": true,\n      \"currTime\": \"2022-10-20T19:15:13.677Z\",\n      \"currLat\": 0,\n      \"currLng\": 0,\n      \"currTPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:15:13.677Z\",\n          \"close\": \"2022-10-20T19:15:13.677Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:15:13.677Z\"\n        }\n      ],\n      \"tPointCompleted\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupport",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupport"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n  \"requestID\": \"string\",\r\n  \"taskList\": [\r\n    {\r\n      \"taskID\": \"string\",\r\n      \"cargoType\": \"string\",\r\n      \"truckTypes\": \"string\",\r\n      \"weight\": 0,\r\n      \"client\": \"string\",\r\n      \"tPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-20T19:15:13.687Z\",\r\n          \"close\": \"2022-10-20T19:15:13.687Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-20T19:15:13.687Z\",\r\n          \"realDeparture\": \"2022-10-20T19:15:13.687Z\",\r\n          \"arrInExtraPeriod\": true\r\n        }\r\n      ],\r\n      \"inclTruckProps\": \"string\",\r\n      \"exclTruckProps\": \"string\"\r\n    }\r\n  ],\r\n  \"truckList\": [\r\n    {\r\n      \"truckID\": \"string\",\r\n      \"gvwr\": 0,\r\n      \"capacity\": 0,\r\n      \"truckType\": \"string\",\r\n      \"cargoTypes\": \"string\",\r\n      \"fixCost\": 0,\r\n      \"kmCost\": 0,\r\n      \"relocateCost\": 0,\r\n      \"maxKM\": 0,\r\n      \"maxDuration\": 0,\r\n      \"engineEuro\": 0,\r\n      \"eTollCat\": 0,\r\n      \"rZones\": \"string\",\r\n      \"width\": 0,\r\n      \"height\": 0,\r\n      \"truckProps\": \"string\",\r\n      \"remainingDriveTime\": 0,\r\n      \"remainingRestTime\": 0,\r\n      \"remainingTimeToStartDailyRest\": 0,\r\n      \"remainingDailyDriveTime\": 0,\r\n      \"remainingDailyRestTime\": 0,\r\n      \"remainingWeeklyDriveTime\": 0,\r\n      \"remainingWeeklyRestTime\": 0,\r\n      \"remainingTwoWeeklyDriveTime\": 0,\r\n      \"remainingTwoWeeklyRestTime\": 0,\r\n      \"remainingRestTimeToCompensate\": 0,\r\n      \"truckTaskType\": 0,\r\n      \"runningTaskID\": \"string\",\r\n      \"currIsOneWay\": true,\r\n      \"currTime\": \"2022-10-20T19:15:13.687Z\",\r\n      \"currLat\": 0,\r\n      \"currLng\": 0,\r\n      \"currTPoints\": [\r\n        {\r\n          \"tpid\": \"string\",\r\n          \"name\": \"string\",\r\n          \"addr\": \"string\",\r\n          \"open\": \"2022-10-20T19:15:13.687Z\",\r\n          \"close\": \"2022-10-20T19:15:13.687Z\",\r\n          \"srvDuration\": 0,\r\n          \"extraPeriod\": 0,\r\n          \"lat\": 0,\r\n          \"lng\": 0,\r\n          \"realArrival\": \"2022-10-20T19:15:13.687Z\",\r\n          \"realDeparture\": \"2022-10-20T19:15:13.687Z\",\r\n          \"arrInExtraPeriod\": true\r\n        }\r\n      ],\r\n      \"tPointCompleted\": 0\r\n    }\r\n  ],\r\n  \"maxTruckDistance\": 0,\r\n  \"result\": [\r\n    {\r\n      \"status\": 0,\r\n      \"objectName\": \"string\",\r\n      \"itemID\": \"string\",\r\n      \"data\": \"string\"\r\n    }\r\n  ],\r\n  \"hasError\": true\r\n}"
+						},
+						{
+							"name": "Unauthorized access",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "X-API-KEY",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"taskList\": [\n    {\n      \"taskID\": \"string\",\n      \"cargoType\": \"string\",\n      \"truckTypes\": \"string\",\n      \"weight\": 0,\n      \"client\": \"string\",\n      \"tPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:15:13.677Z\",\n          \"close\": \"2022-10-20T19:15:13.677Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:15:13.677Z\"\n        }\n      ],\n      \"inclTruckProps\": \"string\",\n      \"exclTruckProps\": \"string\"\n    }\n  ],\n  \"truckList\": [\n    {\n      \"truckID\": \"string\",\n      \"gvwr\": 0,\n      \"capacity\": 0,\n      \"truckType\": \"string\",\n      \"cargoTypes\": \"string\",\n      \"fixCost\": 0,\n      \"kmCost\": 0,\n      \"relocateCost\": 0,\n      \"maxKM\": 0,\n      \"maxDuration\": 0,\n      \"engineEuro\": 0,\n      \"eTollCat\": 0,\n      \"rZones\": \"string\",\n      \"width\": 0,\n      \"height\": 0,\n      \"truckProps\": \"string\",\n      \"remainingDriveTime\": 0,\n      \"remainingRestTime\": 0,\n      \"remainingTimeToStartDailyRest\": 0,\n      \"remainingDailyDriveTime\": 0,\n      \"remainingDailyRestTime\": 0,\n      \"remainingWeeklyDriveTime\": 0,\n      \"remainingWeeklyRestTime\": 0,\n      \"remainingTwoWeeklyDriveTime\": 0,\n      \"remainingTwoWeeklyRestTime\": 0,\n      \"remainingRestTimeToCompensate\": 0,\n      \"truckTaskType\": 0,\n      \"runningTaskID\": \"string\",\n      \"currIsOneWay\": true,\n      \"currTime\": \"2022-10-20T19:15:13.677Z\",\n      \"currLat\": 0,\n      \"currLng\": 0,\n      \"currTPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:15:13.677Z\",\n          \"close\": \"2022-10-20T19:15:13.677Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:15:13.677Z\"\n        }\n      ],\n      \"tPointCompleted\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupport",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupport"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/api/v1/FTLSupporter/FTLSupportX",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-KEY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"taskList\": [\n    {\n      \"TaskID\": \"6035034\",\n      \"Weight\": 1,\n      \"Client\": \"BOLL\\u00D3K J\\u00C1NOS\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F376590\",\n          \"Name\": \"DAPANINOCAFF\\u00C9KFT.\",\n          \"Addr\": \"1239 BUDAPEST Eur\\u00F3pau6\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.3759111217,\n          \"Lng\": 19.126231670399999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F346045\",\n          \"Name\": \"NY\\u00CDREGYH\\u00C1ZA\",\n          \"Addr\": \"4400 NY\\u00CDREGYH\\u00C1ZA K\\u00E1lvin t\\u00E9r 5. FSZ \\u00E1tmeni t\\u00E1rol\\u00F3\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.954970037599999,\n          \"Lng\": 21.7133080959,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035035\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"BOLL\\u00D3K J\\u00C1NOS\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F376590\",\n          \"Name\": \"DAPANINOCAFF\\u00C9KFT.\",\n          \"Addr\": \"1239 BUDAPEST Eur\\u00F3pau6\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.3759111217,\n          \"Lng\": 19.126231670399999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F274594\",\n          \"Name\": \"BALATON SOUND\",\n          \"Addr\": \"8621 ZAM\\u00C1RDI STRAND UTCA 0.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 46.861389160199998,\n          \"Lng\": 17.940326690700001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035022\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"ABA \\u00C9LELEMISZERIPARI \\u00C9S KERESKEDELMI ZRT\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F414584\",\n          \"Name\": \"DELFORG KFT.\",\n          \"Addr\": \"2330 DUNAHARASZTI F\\u0150 \\u00DAT 270.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.339910000000003,\n          \"Lng\": 19.071349999999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F142912\",\n          \"Name\": \"KELET3 - Z\\u00D6LDKER -  PAP BRIGITTA\",\n          \"Addr\": \"5000 SZOLNOK T\\u00D3SZEGI \\u00DAT. 5.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.161650999999999,\n          \"Lng\": 20.174700000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035023\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"DPM SZORTIMENT KERESKEDELMI \\u00C9S SZOLG\\u00C1LTAT\\u00D3 KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F78370\",\n          \"Name\": \"DPM SZORTIMENT KERESKEDELMI \\u00C9S SZOLG\\u00C1LTAT\\u00D3 KFT.\",\n          \"Addr\": \"2730 ALBERTIRSA H\\u0151s\\u00F6k \\u00FAtja 15/a\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.243290000000002,\n          \"Lng\": 19.60408,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F229106\",\n          \"Name\": \"JEHOVA TANUI\",\n          \"Addr\": \"9700 SZOMBATHELY \\u00C1RP\\u00C1D U 102\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.223500100000003,\n          \"Lng\": 16.620843000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035024\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"AAA T\\u00C9RK\\u0150 KFT\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F325719\",\n          \"Name\": \"GRAVIT\\u00C1CI\\u00D3 KFT.\",\n          \"Addr\": \"9700 SZOMBATHELY S\\u00E1gi \\u00FAt 3.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.233567200000003,\n          \"Lng\": 16.640378900000002,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F285042\",\n          \"Name\": \"BI MARKET KFT.\",\n          \"Addr\": \"6800 H\\u00D3DMEZ\\u0150V\\u00C1S\\u00C1RHELY Kutasi \\u00FAt 67\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.428895018200002,\n          \"Lng\": 20.3467226028,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035025\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"ADR LOGISTICS KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F217663\",\n          \"Name\": \"BELLOZZO KFT. - CATONE KFT. \\u2013 FUSION ZRT. WAREHOUSE\",\n          \"Addr\": \"2040 BUDA\\u00D6RS Vas\\u00FAt u. 9.\",\n          \"Open\": \"2022-10-19T07:00:00\",\n          \"Close\": \"2022-10-19T13:00:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.445684700000001,\n          \"Lng\": 18.9660817,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F364946\",\n          \"Name\": \"CSER ISTV\\u00C1N E.V.\",\n          \"Addr\": \"8636 BALATONSZEMES BAJCSY-ZS. U. 42.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.807883099999998,\n          \"Lng\": 17.781090899999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035026\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"EURO BETON KER.\\u00C9S GY\\u00C1RT.KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F428598\",\n          \"Name\": \"COLORSTART MEDIA KERESKEDELMI \\u00C9S SZOLG\\u00C1LTAT\\u00D3 KFT.\",\n          \"Addr\": \"4027 DEBRECEN F\\u00FCredi utca 76.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.5401579989,\n          \"Lng\": 21.606438159900001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F365354\",\n          \"Name\": \"B\\u00C9K\\u00C9S DR\\u00C9N KFT\",\n          \"Addr\": \"5630 B\\u00C9K\\u00C9S PETOFI S. U. 20.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.76831,\n          \"Lng\": 21.134209999999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035027\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"EURO BETON KER.\\u00C9S GY\\u00C1RT.KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F428598\",\n          \"Name\": \"COLORSTART MEDIA KERESKEDELMI \\u00C9S SZOLG\\u00C1LTAT\\u00D3 KFT.\",\n          \"Addr\": \"4027 DEBRECEN F\\u00FCredi utca 76.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.5401579989,\n          \"Lng\": 21.606438159900001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F209969\",\n          \"Name\": \"GYULA\",\n          \"Addr\": \"5700 GYULA Csabai\\u00FAt.3.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.6421002051,\n          \"Lng\": 21.259660720799999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035028\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"A-TRANSPORT-91 KFT\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F390257\",\n          \"Name\": \"DACHSER EINHELL RAKT\\u00C1R\",\n          \"Addr\": \"2085 PILISV\\u00D6R\\u00D6SV\\u00C1R IPARTELEP U 1\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.614175500000002,\n          \"Lng\": 18.9309388,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F205425\",\n          \"Name\": \"KECSKEMET\",\n          \"Addr\": \"6000 KECSKEM\\u00C9T Talf\\u00E1ja 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.933224238900003,\n          \"Lng\": 19.666171073899999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035029\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"A-TRANSPORT-91 KFT\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F390257\",\n          \"Name\": \"DACHSER EINHELL RAKT\\u00C1R\",\n          \"Addr\": \"2085 PILISV\\u00D6R\\u00D6SV\\u00C1R IPARTELEP U 1\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.614175500000002,\n          \"Lng\": 18.9309388,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F357214\",\n          \"Name\": \"SZEGED DISZTR.RAKT.-SZILK\",\n          \"Addr\": \"6728 SZEGED Budapesti \\u00FAt 34.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 46.284429645300001,\n          \"Lng\": 20.0899386406,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035030\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"EU TRUCK KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F363569\",\n          \"Name\": \"GALGA-COOP 502. SZ. SZUPER COOP\",\n          \"Addr\": \"2192 H\\u00C9V\\u00CDZGY\\u00D6RK V\\u00D6R\\u00D6SMARTY U. 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.628709999999998,\n          \"Lng\": 19.519210000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F408757\",\n          \"Name\": \"HANRO SKINY LOGISZTIK AI KFT.\",\n          \"Addr\": \"9027 GY\\u0150R aA u.1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.683839999999996,\n          \"Lng\": 17.613119999999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035031\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"EU TRUCK KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F363569\",\n          \"Name\": \"GALGA-COOP 502. SZ. SZUPER COOP\",\n          \"Addr\": \"2192 H\\u00C9V\\u00CDZGY\\u00D6RK V\\u00D6R\\u00D6SMARTY U. 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.628709999999998,\n          \"Lng\": 19.519210000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F218999\",\n          \"Name\": \"DS SMITH KFT. DUNAHARASZTI\",\n          \"Addr\": \"2330 DUNAHARASZTI F\\u0151 u.1\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.3584198,\n          \"Lng\": 19.0851705,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035032\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"AGROFOL-KER KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F143712\",\n          \"Name\": \"AGROFOL-KER KFT.\",\n          \"Addr\": \"3015 CS\\u00C1NY Szabads\\u00E1g t\\u00E9r 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.692898999999997,\n          \"Lng\": 19.784814000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F233893\",\n          \"Name\": \"ERMA-PLUSZ KFT \\u0022 ERMA-PLUSZ\\u0022 KFT\",\n          \"Addr\": \"2022 TAHI M\\u00F3ricz zsigmond u 83\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.738950500000001,\n          \"Lng\": 19.087259299999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    },\n    {\n      \"TaskID\": \"6035033\",\n      \"CargoType\": \"Sz\\u00E1raz\",\n      \"TruckTypes\": \"Sz\\u00E1raz\",\n      \"Weight\": 1,\n      \"Client\": \"AGROFOL-KER KFT.\",\n      \"TPoints\": [\n        {\n          \"TPID\": \"F143712\",\n          \"Name\": \"AGROFOL-KER KFT.\",\n          \"Addr\": \"3015 CS\\u00C1NY Szabads\\u00E1g t\\u00E9r 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.692898999999997,\n          \"Lng\": 19.784814000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"F441058\",\n          \"Name\": \"CLEANOPT KFT\",\n          \"Addr\": \"8000 SZ\\u00C9KESFEH\\u00C9RV\\u00C1R Bab\\u00E9r u 1\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 0,\n          \"Lat\": 47.184058700000001,\n          \"Lng\": 18.484621300000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"InclTruckProps\": \"\",\n      \"ExclTruckProps\": \"\"\n    }\n  ],\n  \"truckList\": [\n    {\n      \"TruckID\": \"RDX-365\",\n      \"GVWR\": 40000,\n      \"Capacity\": 25340,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 16200,\n      \"RemainingRestTime\": 2700,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 36000,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 201600,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 324000,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 0,\n      \"RunningTaskID\": \"\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:09:00+02:00\",\n      \"CurrLat\": 46.888628333333337,\n      \"CurrLng\": 16.891426666666668,\n      \"CurrTPoints\": [\n        \n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"NVC-413\",\n      \"GVWR\": 40000,\n      \"Capacity\": 37445,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 5,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 0,\n      \"RunningTaskID\": \"\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:21:00+02:00\",\n      \"CurrLat\": 46.887993333333334,\n      \"CurrLng\": 19.604441666666666,\n      \"CurrTPoints\": [\n        \n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"NVC-414\",\n      \"GVWR\": 40000,\n      \"Capacity\": 37445,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 5,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035019\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:21:00+02:00\",\n      \"CurrLat\": 46.798258333333337,\n      \"CurrLng\": 19.628885,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J108017\",\n          \"Name\": \"\\u00C9M\\u00C1SZ  NYRT.\",\n          \"Addr\": \"3525 MISKOLC D\\u00F3zsa Gy\\u00F6rgy u 13\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 48.106782000000003,\n          \"Lng\": 20.778061999999998,\n          \"RealArrival\": \"2022-10-19T10:42:00\",\n          \"RealDeparture\": \"2022-10-19T12:42:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J394501\",\n          \"Name\": \"DOH\\u00C1NYBOLT CSONT.\",\n          \"Addr\": \"1181 BUDAPEST Csontv\\u00E1ry utca 30\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.4395713806,\n          \"Lng\": 19.170392990100002,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J108017\",\n          \"Name\": \"\\u00C9M\\u00C1SZ  NYRT.\",\n          \"Addr\": \"3525 MISKOLC D\\u00F3zsa Gy\\u00F6rgy u 13\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 48.106782000000003,\n          \"Lng\": 20.778061999999998,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J191994\",\n          \"Name\": \"TIN\\u00D3DI \\u00C1LT.ISK\",\n          \"Addr\": \"3300 EGER VALLON U.2.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.919410599999999,\n          \"Lng\": 20.3743379,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"NVC-415\",\n      \"GVWR\": 40000,\n      \"Capacity\": 37445,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 5,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035021\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:17:00+02:00\",\n      \"CurrLat\": 46.887718333333332,\n      \"CurrLng\": 19.69183,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J284381\",\n          \"Name\": \"ML5 TRANS TEAM KFT.\",\n          \"Addr\": \"1223 BUDAPEST Nagyt\\u00E9t\\u00E9nyi \\u00FAt 180-196.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.402720100000003,\n          \"Lng\": 19.009833400000002,\n          \"RealArrival\": \"2022-10-19T10:42:00\",\n          \"RealDeparture\": \"2022-10-19T11:42:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J368281\",\n          \"Name\": \"Emil Molt Alap\\u00EDtv\\u00E1ny\",\n          \"Addr\": \"2000 SZENTENDRE Z\\u00F6ld utca 17.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.684100000000001,\n          \"Lng\": 19.069379999999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"MZE-831\",\n      \"GVWR\": 40000,\n      \"Capacity\": 24961,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035020\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:13:00+02:00\",\n      \"CurrLat\": 47.345745000000001,\n      \"CurrLng\": 19.121483333333334,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J284381\",\n          \"Name\": \"ML5 TRANS TEAM KFT.\",\n          \"Addr\": \"1223 BUDAPEST Nagyt\\u00E9t\\u00E9nyi \\u00FAt 180-196.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.402720100000003,\n          \"Lng\": 19.009833400000002,\n          \"RealArrival\": \"2022-10-19T10:46:00\",\n          \"RealDeparture\": \"2022-10-19T11:46:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J303328\",\n          \"Name\": \"GO-BOKSZ KFT.\",\n          \"Addr\": \"2750 NAGYK\\u0150R\\u00D6S J\\u00F3zsef Attila u. 1.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.034480000000002,\n          \"Lng\": 19.761230000000001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"MZE-845\",\n      \"GVWR\": 40000,\n      \"Capacity\": 24961,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035013\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:21:00+02:00\",\n      \"CurrLat\": 47.378709999999998,\n      \"CurrLng\": 19.267628333333334,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J338666\",\n          \"Name\": \"AXICONT KFT.\",\n          \"Addr\": \"1103 BUDAPEST Gy\\u00F6mr\\u0151i \\u00FAt 1053.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.4672859,\n          \"Lng\": 19.152546699999998,\n          \"RealArrival\": \"2022-10-19T09:10:00\",\n          \"RealDeparture\": \"2022-10-19T10:10:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J172160\",\n          \"Name\": \"G\\u00D3TIKA TATAB\\u00C1NYA\",\n          \"Addr\": \"2880 TATAB\\u00C1NYA T\\u00C1NCSICS M.\\u00FAt 2/F\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.567781811800003,\n          \"Lng\": 18.432912826500001,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"RTF-038\",\n      \"GVWR\": 40000,\n      \"Capacity\": 37470,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035014\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:15:00+02:00\",\n      \"CurrLat\": 47.461272999999998,\n      \"CurrLng\": 19.047416999999999,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J394501\",\n          \"Name\": \"DOH\\u00C1NYBOLT CSONT.\",\n          \"Addr\": \"1181 BUDAPEST Csontv\\u00E1ry utca 30\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.4395713806,\n          \"Lng\": 19.170392990100002,\n          \"RealArrival\": \"2022-10-19T09:40:00\",\n          \"RealDeparture\": \"2022-10-19T10:40:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J358427\",\n          \"Name\": \"B\\u00C1TOR T\\u00C1BOR ALAP\\u00CDTV\\u00C1NY\",\n          \"Addr\": \"3000 HATVAN !Delel\\u0151 \\u00FAt Hrsz 220/1.GPS: 47!39.004\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.655850000000001,\n          \"Lng\": 19.7028,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J405536\",\n          \"Name\": \"TESK\\u00C1NDI AGR\\u00C1R-COOP KFT.- FLANSCH-TECH KFT\",\n          \"Addr\": \"1211 BUDAPEST K\\u00F6zponti \\u00FAt 18.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.430390000000003,\n          \"Lng\": 19.06146,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J191994\",\n          \"Name\": \"TIN\\u00D3DI \\u00C1LT.ISK\",\n          \"Addr\": \"3300 EGER VALLON U.2.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.919410599999999,\n          \"Lng\": 20.3743379,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T02:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"RTF-039\",\n      \"GVWR\": 40000,\n      \"Capacity\": 37470,\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035017\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:21:00+02:00\",\n      \"CurrLat\": 46.963416666666667,\n      \"CurrLng\": 18.943063333333335,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J43905\",\n          \"Name\": \"IP \\u00DCZEMELTET\\u00C9SI OSZT\\u00C1LY  P\\u00C9CS\",\n          \"Addr\": \"7630 P\\u00C9CS R\\u00C1K\\u00D3CZI U.19. I. em. 124.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 46.072887100000003,\n          \"Lng\": 18.226403999999999,\n          \"RealArrival\": \"2022-10-19T10:24:00\",\n          \"RealDeparture\": \"2022-10-19T12:24:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J396954\",\n          \"Name\": \"DELIVERY HERO DMART HUNGARY KFT./SZEGED\",\n          \"Addr\": \"6725 SZEGED K\\u00C1LV\\u00C1RIA SGT. 87/A.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 46.25414,\n          \"Lng\": 20.11713,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    },\n    {\n      \"TruckID\": \"PPA-136\",\n      \"Capacity\": 23476,\n      \"TruckType\": \"Sz\\u00E1raz\",\n      \"CargoTypes\": \"Sz\\u00E1raz\",\n      \"FixCost\": 0,\n      \"KMCost\": 0,\n      \"RelocateCost\": 0,\n      \"MaxKM\": 0,\n      \"MaxDuration\": 0,\n      \"EngineEuro\": 6,\n      \"ETollCat\": 4,\n      \"RZones\": \"B35,CS12,CS7,DB1,DP1,DP3,DP7,\\u00C9B1,\\u00C9B7,\\u00C9P1,HB1,KP1,KV3,P35,P75\",\n      \"Width\": 0,\n      \"Height\": 0,\n      \"TruckProps\": null,\n      \"RemainingDriveTime\": 0,\n      \"RemainingRestTime\": 0,\n      \"RemainingTimeToStartDailyRest\": 0,\n      \"RemainingDailyDriveTime\": 0,\n      \"RemainingDailyRestTime\": 0,\n      \"RemainingWeeklyDriveTime\": 0,\n      \"RemainingWeeklyRestTime\": 0,\n      \"RemainingTwoWeeklyDriveTime\": 0,\n      \"RemainingTwoWeeklyRestTime\": 0,\n      \"RemainingRestTimeToCompensate\": 0,\n      \"TruckTaskType\": 2,\n      \"RunningTaskID\": \"6035016\",\n      \"CurrIsOneWay\": true,\n      \"CurrTime\": \"2022-10-19T12:21:29+02:00\",\n      \"CurrLat\": 46.008718333333334,\n      \"CurrLng\": 18.664735,\n      \"CurrTPoints\": [\n        {\n          \"TPID\": \"J43905\",\n          \"Name\": \"IP \\u00DCZEMELTET\\u00C9SI OSZT\\u00C1LY  P\\u00C9CS\",\n          \"Addr\": \"7630 P\\u00C9CS R\\u00C1K\\u00D3CZI U.19. I. em. 124.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 120,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 46.072887100000003,\n          \"Lng\": 18.226403999999999,\n          \"RealArrival\": \"2022-10-19T10:20:00\",\n          \"RealDeparture\": \"2022-10-19T12:20:00\",\n          \"ArrInExtraPeriod\": false\n        },\n        {\n          \"TPID\": \"J235018\",\n          \"Name\": \"DR. T\\u00D3TH RAM\\u00D3NA\",\n          \"Addr\": \"1021 BUDAPEST Kuruclesi \\u00FAt 35C, 1. emelet IV.\",\n          \"Open\": \"2022-10-19T00:00:00\",\n          \"Close\": \"2022-10-19T23:59:00\",\n          \"SrvDuration\": 60,\n          \"ExtraPeriod\": 120,\n          \"Lat\": 47.524624000000003,\n          \"Lng\": 18.977276499999999,\n          \"RealArrival\": \"0001-01-01T00:00:00\",\n          \"RealDeparture\": \"0001-01-01T01:00:00\",\n          \"ArrInExtraPeriod\": false\n        }\n      ],\n      \"TPointCompleted\": 0\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupportX",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"FTLSupporter",
+								"FTLSupportX"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "FTLSupport engine accepted the request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "X-API-KEY",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"taskList\": [\n    {\n      \"taskID\": \"string\",\n      \"cargoType\": \"string\",\n      \"truckTypes\": \"string\",\n      \"weight\": 0,\n      \"client\": \"string\",\n      \"tPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:19:38.353Z\",\n          \"close\": \"2022-10-20T19:19:38.353Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:19:38.353Z\"\n        }\n      ],\n      \"inclTruckProps\": \"string\",\n      \"exclTruckProps\": \"string\"\n    }\n  ],\n  \"truckList\": [\n    {\n      \"truckID\": \"string\",\n      \"gvwr\": 0,\n      \"capacity\": 0,\n      \"truckType\": \"string\",\n      \"cargoTypes\": \"string\",\n      \"fixCost\": 0,\n      \"kmCost\": 0,\n      \"relocateCost\": 0,\n      \"maxKM\": 0,\n      \"maxDuration\": 0,\n      \"engineEuro\": 0,\n      \"eTollCat\": 0,\n      \"rZones\": \"string\",\n      \"width\": 0,\n      \"height\": 0,\n      \"truckProps\": \"string\",\n      \"remainingDriveTime\": 0,\n      \"remainingRestTime\": 0,\n      \"remainingTimeToStartDailyRest\": 0,\n      \"remainingDailyDriveTime\": 0,\n      \"remainingDailyRestTime\": 0,\n      \"remainingWeeklyDriveTime\": 0,\n      \"remainingWeeklyRestTime\": 0,\n      \"remainingTwoWeeklyDriveTime\": 0,\n      \"remainingTwoWeeklyRestTime\": 0,\n      \"remainingRestTimeToCompensate\": 0,\n      \"truckTaskType\": 0,\n      \"runningTaskID\": \"string\",\n      \"currIsOneWay\": true,\n      \"currTime\": \"2022-10-20T19:19:38.354Z\",\n      \"currLat\": 0,\n      \"currLng\": 0,\n      \"currTPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:19:38.354Z\",\n          \"close\": \"2022-10-20T19:19:38.354Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:19:38.354Z\"\n        }\n      ],\n      \"tPointCompleted\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "//api/v1/FTLSupporter/FTLSupportX",
+									"path": [
+										"",
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupportX"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"requestID\": \"string\",\n  \"taskList\": [\n    {\n      \"taskID\": \"string\",\n      \"cargoType\": \"string\",\n      \"truckTypes\": \"string\",\n      \"weight\": 0,\n      \"client\": \"string\",\n      \"tPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:19:38.362Z\",\n          \"close\": \"2022-10-20T19:19:38.362Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:19:38.362Z\",\n          \"realDeparture\": \"2022-10-20T19:19:38.362Z\",\n          \"arrInExtraPeriod\": true\n        }\n      ],\n      \"inclTruckProps\": \"string\",\n      \"exclTruckProps\": \"string\"\n    }\n  ],\n  \"truckList\": [\n    {\n      \"truckID\": \"string\",\n      \"gvwr\": 0,\n      \"capacity\": 0,\n      \"truckType\": \"string\",\n      \"cargoTypes\": \"string\",\n      \"fixCost\": 0,\n      \"kmCost\": 0,\n      \"relocateCost\": 0,\n      \"maxKM\": 0,\n      \"maxDuration\": 0,\n      \"engineEuro\": 0,\n      \"eTollCat\": 0,\n      \"rZones\": \"string\",\n      \"width\": 0,\n      \"height\": 0,\n      \"truckProps\": \"string\",\n      \"remainingDriveTime\": 0,\n      \"remainingRestTime\": 0,\n      \"remainingTimeToStartDailyRest\": 0,\n      \"remainingDailyDriveTime\": 0,\n      \"remainingDailyRestTime\": 0,\n      \"remainingWeeklyDriveTime\": 0,\n      \"remainingWeeklyRestTime\": 0,\n      \"remainingTwoWeeklyDriveTime\": 0,\n      \"remainingTwoWeeklyRestTime\": 0,\n      \"remainingRestTimeToCompensate\": 0,\n      \"truckTaskType\": 0,\n      \"runningTaskID\": \"string\",\n      \"currIsOneWay\": true,\n      \"currTime\": \"2022-10-20T19:19:38.362Z\",\n      \"currLat\": 0,\n      \"currLng\": 0,\n      \"currTPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:19:38.362Z\",\n          \"close\": \"2022-10-20T19:19:38.362Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:19:38.362Z\",\n          \"realDeparture\": \"2022-10-20T19:19:38.362Z\",\n          \"arrInExtraPeriod\": true\n        }\n      ],\n      \"tPointCompleted\": 0\n    }\n  ],\n  \"maxTruckDistance\": 0,\n  \"result\": [\n    {\n      \"status\": 0,\n      \"objectName\": \"string\",\n      \"itemID\": \"string\",\n      \"data\": \"string\"\n    }\n  ],\n  \"hasError\": true\n}"
+						},
+						{
+							"name": "FTLSupportCommand has syntax error or failed at validation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "X-API-KEY",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"taskList\": [\n    {\n      \"taskID\": \"string\",\n      \"cargoType\": \"string\",\n      \"truckTypes\": \"string\",\n      \"weight\": 0,\n      \"client\": \"string\",\n      \"tPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:19:38.353Z\",\n          \"close\": \"2022-10-20T19:19:38.353Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:19:38.353Z\"\n        }\n      ],\n      \"inclTruckProps\": \"string\",\n      \"exclTruckProps\": \"string\"\n    }\n  ],\n  \"truckList\": [\n    {\n      \"truckID\": \"string\",\n      \"gvwr\": 0,\n      \"capacity\": 0,\n      \"truckType\": \"string\",\n      \"cargoTypes\": \"string\",\n      \"fixCost\": 0,\n      \"kmCost\": 0,\n      \"relocateCost\": 0,\n      \"maxKM\": 0,\n      \"maxDuration\": 0,\n      \"engineEuro\": 0,\n      \"eTollCat\": 0,\n      \"rZones\": \"string\",\n      \"width\": 0,\n      \"height\": 0,\n      \"truckProps\": \"string\",\n      \"remainingDriveTime\": 0,\n      \"remainingRestTime\": 0,\n      \"remainingTimeToStartDailyRest\": 0,\n      \"remainingDailyDriveTime\": 0,\n      \"remainingDailyRestTime\": 0,\n      \"remainingWeeklyDriveTime\": 0,\n      \"remainingWeeklyRestTime\": 0,\n      \"remainingTwoWeeklyDriveTime\": 0,\n      \"remainingTwoWeeklyRestTime\": 0,\n      \"remainingRestTimeToCompensate\": 0,\n      \"truckTaskType\": 0,\n      \"runningTaskID\": \"string\",\n      \"currIsOneWay\": true,\n      \"currTime\": \"2022-10-20T19:19:38.354Z\",\n      \"currLat\": 0,\n      \"currLng\": 0,\n      \"currTPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:19:38.354Z\",\n          \"close\": \"2022-10-20T19:19:38.354Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:19:38.354Z\"\n        }\n      ],\n      \"tPointCompleted\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupportX",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupportX"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"requestID\": \"string\",\n    \"taskList\": [\n        {\n            \"taskID\": \"string\",\n            \"cargoType\": \"string\",\n            \"truckTypes\": \"string\",\n            \"weight\": 0,\n            \"client\": \"string\",\n            \"tPoints\": [\n                {\n                    \"tpid\": \"string\",\n                    \"name\": \"string\",\n                    \"addr\": \"string\",\n                    \"open\": \"2022-10-20T19:19:38.362Z\",\n                    \"close\": \"2022-10-20T19:19:38.362Z\",\n                    \"srvDuration\": 0,\n                    \"extraPeriod\": 0,\n                    \"lat\": 0,\n                    \"lng\": 0,\n                    \"realArrival\": \"2022-10-20T19:19:38.362Z\",\n                    \"realDeparture\": \"2022-10-20T19:19:38.362Z\",\n                    \"arrInExtraPeriod\": true\n                }\n            ],\n            \"inclTruckProps\": \"string\",\n            \"exclTruckProps\": \"string\"\n        }\n    ],\n    \"truckList\": [\n        {\n            \"truckID\": \"string\",\n            \"gvwr\": 0,\n            \"capacity\": 0,\n            \"truckType\": \"string\",\n            \"cargoTypes\": \"string\",\n            \"fixCost\": 0,\n            \"kmCost\": 0,\n            \"relocateCost\": 0,\n            \"maxKM\": 0,\n            \"maxDuration\": 0,\n            \"engineEuro\": 0,\n            \"eTollCat\": 0,\n            \"rZones\": \"string\",\n            \"width\": 0,\n            \"height\": 0,\n            \"truckProps\": \"string\",\n            \"remainingDriveTime\": 0,\n            \"remainingRestTime\": 0,\n            \"remainingTimeToStartDailyRest\": 0,\n            \"remainingDailyDriveTime\": 0,\n            \"remainingDailyRestTime\": 0,\n            \"remainingWeeklyDriveTime\": 0,\n            \"remainingWeeklyRestTime\": 0,\n            \"remainingTwoWeeklyDriveTime\": 0,\n            \"remainingTwoWeeklyRestTime\": 0,\n            \"remainingRestTimeToCompensate\": 0,\n            \"truckTaskType\": 0,\n            \"runningTaskID\": \"string\",\n            \"currIsOneWay\": true,\n            \"currTime\": \"2022-10-20T19:19:38.362Z\",\n            \"currLat\": 0,\n            \"currLng\": 0,\n            \"currTPoints\": [\n                {\n                    \"tpid\": \"string\",\n                    \"name\": \"string\",\n                    \"addr\": \"string\",\n                    \"open\": \"2022-10-20T19:19:38.362Z\",\n                    \"close\": \"2022-10-20T19:19:38.362Z\",\n                    \"srvDuration\": 0,\n                    \"extraPeriod\": 0,\n                    \"lat\": 0,\n                    \"lng\": 0,\n                    \"realArrival\": \"2022-10-20T19:19:38.362Z\",\n                    \"realDeparture\": \"2022-10-20T19:19:38.362Z\",\n                    \"arrInExtraPeriod\": true\n                }\n            ],\n            \"tPointCompleted\": 0\n        }\n    ],\n    \"maxTruckDistance\": 0,\n    \"result\": [\n        {\n            \"status\": 0,\n            \"objectName\": \"string\",\n            \"itemID\": \"string\",\n            \"data\": \"string\"\n        }\n    ],\n    \"hasError\": true\n}"
+						},
+						{
+							"name": "Unauthorized access",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "Added as a part of security scheme: apikey",
+										"key": "X-API-KEY",
+										"value": "<API Key>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"taskList\": [\n    {\n      \"taskID\": \"string\",\n      \"cargoType\": \"string\",\n      \"truckTypes\": \"string\",\n      \"weight\": 0,\n      \"client\": \"string\",\n      \"tPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:19:38.353Z\",\n          \"close\": \"2022-10-20T19:19:38.353Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:19:38.353Z\"\n        }\n      ],\n      \"inclTruckProps\": \"string\",\n      \"exclTruckProps\": \"string\"\n    }\n  ],\n  \"truckList\": [\n    {\n      \"truckID\": \"string\",\n      \"gvwr\": 0,\n      \"capacity\": 0,\n      \"truckType\": \"string\",\n      \"cargoTypes\": \"string\",\n      \"fixCost\": 0,\n      \"kmCost\": 0,\n      \"relocateCost\": 0,\n      \"maxKM\": 0,\n      \"maxDuration\": 0,\n      \"engineEuro\": 0,\n      \"eTollCat\": 0,\n      \"rZones\": \"string\",\n      \"width\": 0,\n      \"height\": 0,\n      \"truckProps\": \"string\",\n      \"remainingDriveTime\": 0,\n      \"remainingRestTime\": 0,\n      \"remainingTimeToStartDailyRest\": 0,\n      \"remainingDailyDriveTime\": 0,\n      \"remainingDailyRestTime\": 0,\n      \"remainingWeeklyDriveTime\": 0,\n      \"remainingWeeklyRestTime\": 0,\n      \"remainingTwoWeeklyDriveTime\": 0,\n      \"remainingTwoWeeklyRestTime\": 0,\n      \"remainingRestTimeToCompensate\": 0,\n      \"truckTaskType\": 0,\n      \"runningTaskID\": \"string\",\n      \"currIsOneWay\": true,\n      \"currTime\": \"2022-10-20T19:19:38.354Z\",\n      \"currLat\": 0,\n      \"currLng\": 0,\n      \"currTPoints\": [\n        {\n          \"tpid\": \"string\",\n          \"name\": \"string\",\n          \"addr\": \"string\",\n          \"open\": \"2022-10-20T19:19:38.354Z\",\n          \"close\": \"2022-10-20T19:19:38.354Z\",\n          \"srvDuration\": 0,\n          \"extraPeriod\": 0,\n          \"lat\": 0,\n          \"lng\": 0,\n          \"realArrival\": \"2022-10-20T19:19:38.354Z\"\n        }\n      ],\n      \"tPointCompleted\": 0\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/FTLSupportX",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"FTLSupportX"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "/api/v1/FTLSupporter/Result",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "<API Key>",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "X-API-KEY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/v1/FTLSupporter/Result/{requestID}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"FTLSupporter",
+								"Result",
+								"{requestID}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Accept the request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/Result/{requestID}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"Result",
+										"{requestID}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"requestID\": \"string\",\n    \"taskList\": [\n        {\n            \"taskID\": \"string\",\n            \"cargoType\": \"string\",\n            \"truckTypes\": \"string\",\n            \"weight\": 0,\n            \"client\": \"string\",\n            \"tPoints\": [\n                {\n                    \"tpid\": \"string\",\n                    \"name\": \"string\",\n                    \"addr\": \"string\",\n                    \"open\": \"2022-12-06T07:36:03.290Z\",\n                    \"close\": \"2022-12-06T07:36:03.290Z\",\n                    \"srvDuration\": 0,\n                    \"extraPeriod\": 0,\n                    \"lat\": 0,\n                    \"lng\": 0,\n                    \"realArrival\": \"2022-12-06T07:36:03.290Z\",\n                    \"realDeparture\": \"2022-12-06T07:36:03.290Z\",\n                    \"arrInExtraPeriod\": true\n                }\n            ],\n            \"inclTruckProps\": \"string\",\n            \"exclTruckProps\": \"string\"\n        }\n    ],\n    \"truckList\": [\n        {\n            \"truckID\": \"string\",\n            \"gvwr\": 0,\n            \"capacity\": 0,\n            \"truckType\": \"string\",\n            \"cargoTypes\": \"string\",\n            \"fixCost\": 0,\n            \"kmCost\": 0,\n            \"relocateCost\": 0,\n            \"maxKM\": 0,\n            \"maxDuration\": 0,\n            \"engineEuro\": 0,\n            \"eTollCat\": 0,\n            \"rZones\": \"string\",\n            \"width\": 0,\n            \"height\": 0,\n            \"truckProps\": \"string\",\n            \"remainingDriveTime\": 0,\n            \"remainingRestTime\": 0,\n            \"remainingTimeToStartDailyRest\": 0,\n            \"remainingDailyDriveTime\": 0,\n            \"remainingDailyRestTime\": 0,\n            \"remainingWeeklyDriveTime\": 0,\n            \"remainingWeeklyRestTime\": 0,\n            \"remainingTwoWeeklyDriveTime\": 0,\n            \"remainingTwoWeeklyRestTime\": 0,\n            \"remainingRestTimeToCompensate\": 0,\n            \"truckTaskType\": 0,\n            \"runningTaskID\": \"string\",\n            \"currIsOneWay\": true,\n            \"currTime\": \"2022-12-06T07:36:03.290Z\",\n            \"currLat\": 0,\n            \"currLng\": 0,\n            \"currTPoints\": [\n                {\n                    \"tpid\": \"string\",\n                    \"name\": \"string\",\n                    \"addr\": \"string\",\n                    \"open\": \"2022-12-06T07:36:03.290Z\",\n                    \"close\": \"2022-12-06T07:36:03.290Z\",\n                    \"srvDuration\": 0,\n                    \"extraPeriod\": 0,\n                    \"lat\": 0,\n                    \"lng\": 0,\n                    \"realArrival\": \"2022-12-06T07:36:03.290Z\",\n                    \"realDeparture\": \"2022-12-06T07:36:03.290Z\",\n                    \"arrInExtraPeriod\": true\n                }\n            ],\n            \"tPointCompleted\": 0\n        }\n    ],\n    \"maxTruckDistance\": 0,\n    \"result\": [\n        {\n            \"status\": 0,\n            \"objectName\": \"string\",\n            \"itemID\": \"string\",\n            \"data\": \"string\"\n        }\n    ],\n    \"hasError\": true\n}"
+						},
+						{
+							"name": "Has error in request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/Result/{requestID}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"Result",
+										"{requestID}"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"requestID\": \"string\",\n    \"taskList\": [\n        {\n            \"taskID\": \"string\",\n            \"cargoType\": \"string\",\n            \"truckTypes\": \"string\",\n            \"weight\": 0,\n            \"client\": \"string\",\n            \"tPoints\": [\n                {\n                    \"tpid\": \"string\",\n                    \"name\": \"string\",\n                    \"addr\": \"string\",\n                    \"open\": \"2022-10-20T19:19:38.362Z\",\n                    \"close\": \"2022-10-20T19:19:38.362Z\",\n                    \"srvDuration\": 0,\n                    \"extraPeriod\": 0,\n                    \"lat\": 0,\n                    \"lng\": 0,\n                    \"realArrival\": \"2022-10-20T19:19:38.362Z\",\n                    \"realDeparture\": \"2022-10-20T19:19:38.362Z\",\n                    \"arrInExtraPeriod\": true\n                }\n            ],\n            \"inclTruckProps\": \"string\",\n            \"exclTruckProps\": \"string\"\n        }\n    ],\n    \"truckList\": [\n        {\n            \"truckID\": \"string\",\n            \"gvwr\": 0,\n            \"capacity\": 0,\n            \"truckType\": \"string\",\n            \"cargoTypes\": \"string\",\n            \"fixCost\": 0,\n            \"kmCost\": 0,\n            \"relocateCost\": 0,\n            \"maxKM\": 0,\n            \"maxDuration\": 0,\n            \"engineEuro\": 0,\n            \"eTollCat\": 0,\n            \"rZones\": \"string\",\n            \"width\": 0,\n            \"height\": 0,\n            \"truckProps\": \"string\",\n            \"remainingDriveTime\": 0,\n            \"remainingRestTime\": 0,\n            \"remainingTimeToStartDailyRest\": 0,\n            \"remainingDailyDriveTime\": 0,\n            \"remainingDailyRestTime\": 0,\n            \"remainingWeeklyDriveTime\": 0,\n            \"remainingWeeklyRestTime\": 0,\n            \"remainingTwoWeeklyDriveTime\": 0,\n            \"remainingTwoWeeklyRestTime\": 0,\n            \"remainingRestTimeToCompensate\": 0,\n            \"truckTaskType\": 0,\n            \"runningTaskID\": \"string\",\n            \"currIsOneWay\": true,\n            \"currTime\": \"2022-10-20T19:19:38.362Z\",\n            \"currLat\": 0,\n            \"currLng\": 0,\n            \"currTPoints\": [\n                {\n                    \"tpid\": \"string\",\n                    \"name\": \"string\",\n                    \"addr\": \"string\",\n                    \"open\": \"2022-10-20T19:19:38.362Z\",\n                    \"close\": \"2022-10-20T19:19:38.362Z\",\n                    \"srvDuration\": 0,\n                    \"extraPeriod\": 0,\n                    \"lat\": 0,\n                    \"lng\": 0,\n                    \"realArrival\": \"2022-10-20T19:19:38.362Z\",\n                    \"realDeparture\": \"2022-10-20T19:19:38.362Z\",\n                    \"arrInExtraPeriod\": true\n                }\n            ],\n            \"tPointCompleted\": 0\n        }\n    ],\n    \"maxTruckDistance\": 0,\n    \"result\": [\n        {\n            \"status\": 0,\n            \"objectName\": \"string\",\n            \"itemID\": \"string\",\n            \"data\": \"string\"\n        }\n    ],\n    \"hasError\": true\n}"
+						},
+						{
+							"name": "Unauthorized access",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/v1/FTLSupporter/Result/{requestID}",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"FTLSupporter",
+										"Result",
+										"{requestID}"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "apikey",
+				"apikey": [
+					{
+						"key": "value",
+						"value": "<API Key>",
+						"type": "string"
+					},
+					{
+						"key": "key",
+						"value": "X-API-KEY",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "get the 'isalive' status of the FTLSupporter service",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "<API Key>",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-API-KEY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "text/plain"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/info",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"info"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "FTLSupporter engine runs",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "X-API-KEY",
+								"value": "<API Key>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/info",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"info"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"version\": \"1.0\"\n}"
+				},
+				{
+					"name": "Unauthorized access",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "X-API-KEY",
+								"value": "<API Key>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/info",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"info"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-API-KEY",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "<API Key>",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
